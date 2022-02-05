@@ -1,0 +1,18 @@
+.navbar a {
+  background-color: #333;
+  overflow: hidden;
+  display: inline;
+}
+
+
+.rotate_image {
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+        h1 {
+            color: green;
+        }
