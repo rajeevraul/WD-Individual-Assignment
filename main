@@ -1,4 +1,0 @@
-var bar = document.getElementById('progressbar');
-window.addEventListener("scroll", function(){
-    bar.style.width = pageYoffset;
-})
