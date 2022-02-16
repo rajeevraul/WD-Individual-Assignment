@@ -29,7 +29,7 @@
 
 .footercontainer{
   background-color: #212329;
-  padding-bottom: 5rem;
+  padding: 4rem 0 4rem 0;
 }
 
 .footer{
@@ -79,4 +79,24 @@
   margin-bottom: 1rem;
 }
 
-#footer-email
+#footer-email::placeholder{
+  color: #b1b1b1;
+}
+
+#footer-email-btn{
+  width: 100px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #F9423D;
+  outline: none;
+  border: none;
+  color: #FFFF;
+  font-size: 1rem;
+}
+
+
+#footer-email-btn:hover{
+  cursor: pointer;
+  background-color: #337AF1;
+  transition: all 0.4s ease-out;
+}
