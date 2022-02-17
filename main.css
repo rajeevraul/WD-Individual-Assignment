@@ -67,6 +67,14 @@
   transition: all 0.4s ease-out;
 }
 
+#intropic{
+  display: flex;
+  width: auto;
+  object-fit: fill;
+  max-width: 100%;
+}
+
+
 *{
   padding: 0;
   margin: 0;
