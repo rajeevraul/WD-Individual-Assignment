@@ -33,9 +33,9 @@
   background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
   background-size: 100%;
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: Arial;
-  font-color: #fff;
+  color: #000000;
 }
 
 .navbarmenu{
@@ -47,6 +47,8 @@
 
 .navbaritem{
   height: 80px;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .navbarlink{
