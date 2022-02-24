@@ -117,25 +117,27 @@
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+  display: table-row-group;
 }
 
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
 }
 
-#intropic {
-  display: flex;
-  height: 50%;
-  max-width: 10%;
-}
+
+
 
 .article1 {
   display:inline-block;
   background-color: #494859;
-  width: 40%;
+  width: 0%;
   float: left;
   margin: 5%;
+}
+
+.article1 img{
+  width: 400px;
+  height: 200px;
 }
 
 .article1 p{
@@ -148,6 +150,7 @@
   display:inline-block;
   width: 40%;
   margin: 5%;
+  float: right;
 }
 
 .article2 p {
