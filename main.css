@@ -80,7 +80,7 @@
 
 /*Body*/
 .dropbtn {
-  background-color: #04AA6D;
+  background-color: #00008B;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -98,7 +98,7 @@
   display: none;
   position: absolute;
   background-color: #f1f1f1;
-  min-width: 160px;
+  min-width: 800px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -121,11 +121,8 @@
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+  background-color: #0000FF	 ;
 }
-
-
-
 
 .article1 {
   display:inline-block;
@@ -136,14 +133,16 @@
 }
 
 .article1 img{
-  width: 400px;
-  height: 200px;
+  float: left;
+  width: 500px;
+  height: 300px;
 }
 
 .article1 p{
   display:inline-block;
   justify-content: space-around;
   align-items: flex-end;
+  border: 5px solid black;
 }
 
 .article2{
@@ -151,6 +150,11 @@
   width: 40%;
   margin: 5%;
   float: right;
+}
+
+.article2 img{
+  width: 500px;
+  height: 300px;
 }
 
 .article2 p {
