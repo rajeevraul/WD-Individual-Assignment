@@ -60,6 +60,7 @@
   width: 155px;
   text-decoration: none;
   height: 100%;
+  margin: 0 10px 50px 10px;
 }
 
 .userimage{
@@ -86,6 +87,7 @@
   font-size: 16px;
   border: none;
   cursor: pointer;
+  font: Arial;
 }
 
 .dropdown {
@@ -121,7 +123,9 @@
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #0000FF	 ;
+  cursor: pointer;
+  background-color: #0000FF;
+  transition: all 0.4s ease-out;
 }
 
 .article1 {
@@ -138,21 +142,21 @@
   height: 300px;
 }
 
-.article1 p{
+.article1 h1{
   display:inline-block;
   justify-content: space-around;
   align-items: flex-end;
   border: 5px solid black;
 }
 
-.article2{
+.article2 {
   display:inline-block;
   width: 40%;
   margin: 5%;
   float: right;
 }
 
-.article2 img{
+.article2 img {
   width: 500px;
   height: 300px;
 }
@@ -161,6 +165,7 @@
   display:inline-block;
   justify-content: space-around;
   align-items: center;
+  float: right;
 }
 
 .article3 {
