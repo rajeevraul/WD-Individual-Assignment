@@ -129,7 +129,7 @@
   width: 50%;
   padding: 5px 10px 0 10px;
 }
-
+/*
 .article1 {
   display:inline-block;
   background-color: #494859;
@@ -151,6 +151,11 @@
   border: 5px solid black;
 }
 
+.article1 p{
+  display: inline-block;
+  justify-content: space-around;
+}
+
 .article2 {
   display:inline-block;
   width: 40%;
@@ -168,6 +173,7 @@
   justify-content: space-around;
   align-items: center;
   float: right;
+  text-decoration: none;
 }
 
 .article3 {
@@ -207,7 +213,7 @@
   display:inline-block;
   justify-content: space-around;
   align-items: center;
-}
+}*/
 
 
 
