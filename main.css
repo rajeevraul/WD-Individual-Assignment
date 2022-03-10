@@ -1,127 +1,3 @@
-/*Navigation Bar*/
-*{
-  box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Times New Roman", Times, serif;
-    scroll-behavior: smooth;
-  }
-
-.navbar{
-  background-color: #212329;
-  height: 80px;
-  font-size: 30px;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-}
-
-.navbarcontainer{
-  display: flex;
-  justify-content: space-between;
-  height: 80px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.logolink {
-  display: block;
-  width: 100%
-  left: 10;
-
-}
-
-.navbarlogo{
-  display: block;
-  height: 100%;
-}
-
-.navbarmenu{
-  display: flex;
-  align-items: center;
-  padding-top: 4rem;
-}
-
-#myBtn {
-  background: none;
-  text-decoration: none;
-  margin: 0 20px 50px 0px;
-  color: #7a8194;
-  font-size: 15px;
-  font-weight: bold;
-  list-style: none;
-  border: none;
-  text-align: center;
-  letter-spacing: 2.5px;
-}
-
-.navbaritem{
-  height: 80px;
-  font-size: 15px;
-  font-weight: bold;
-  list-style: none;
-  width: 160px;
-  text-align: center;
-}
-
-.navbarlink{
-  color: #7a8194;
-  text-decoration: none;
-  margin: 0 20px 50px 10px;
-  letter-spacing: 2.5px;
-}
-
-.navbaritem :hover{
-  cursor: pointer;
-  color: #000000;
-  transition: all 0.4s ease-out;
-}
-
-.myBtn :hover {
-  cursor: pointer;
-  color: #000000;
-  padding-left: 500px;
-  transition: all 0.4s ease-out;
-}
-
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-
 /*Body*/
 
 .mainbody{
@@ -187,44 +63,53 @@
   padding: 5px 10px 0 10px;
 }
 
+.articles {
+  display: flex;
+  justify-content: center;
+}
+
+.articleimage {
+  width: 50%;
+  height: 100%;
+  padding: 5px;
+}
+
 .article1 {
-  display:inline-block;
   background-color: #494859;
-  width: 40%;
+  width: 600px;
+  height: 168px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   margin: 50px 20px 0 50px;
   padding: 5px;
   border-radius: 10px;
 }
 
 .article1 img{
- width: 100%;
+ width: 50%;
  border-radius: 10px;
 }
 
 .article1 p{
-  padding: 15px;
 }
 
 .article2 {
-  display:inline-block;
+  background-color: #494859;
   width: 40%;
-  margin: 5%;
-  float: right;
+  display: flex;
+  flex-direction: row;
+  margin: 50px 20px 0 50px;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 .article2 img {
-  width: 500px;
-  height: 300px;
+  width: 100%;
+  border-radius: 10px;
 }
 
 .article2 p {
-  display:inline-block;
-  justify-content: space-around;
-  align-items: center;
-  float: right;
+ padding: 15px;
 }
 
 .article3 {
@@ -264,89 +149,4 @@
   display:inline-block;
   justify-content: space-around;
   align-items: center;
-}
-
-
-
-
-/*Footer*/
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: Arial;
-}
-
-.footercontainer{
-  background-color: #212329;
-  padding: 4rem 0 4rem 0;
-}
-
-.footer{
-  width: 80%;
-  height: 35vh;
-  background-color: #212329;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 0 auto;
-}
-
-.footerhead{
-  display: flex;
-  flex-direction: column;
-  margin-right: 4rem;
-}
-
-.footerhead h2{
-  margin-bottom: 2rem;
-}
-
-.footerhead a{
-  color: #fff;
-  text-decoration: none;
-  margin-bottom: 0.5rem;
-}
-
-.footerhead a:hover{
-  color: red;
-  transition: 0.5s ease-out;
-}
-
-.footer-email h2{
-  margin-bottom: 2rem;
-}
-
-#footer-email{
-  width: 250px;
-  height: 40px;
-  border-radius: 4px;
-  outline: none;
-  border: none;
-  padding-left: 0.5rem;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
-
-#footer-email::placeholder{
-  color: #b1b1b1;
-}
-
-#footer-email-btn{
-  width: 100px;
-  height: 40px;
-  border-radius: 4px;
-  background-color: #F9423D;
-  outline: none;
-  border: none;
-  color: #FFFF;
-  font-size: 1rem;
-}
-
-
-#footer-email-btn:hover{
-  cursor: pointer;
-  background-color: #337AF1;
-  transition: all 0.4s ease-out;
 }
