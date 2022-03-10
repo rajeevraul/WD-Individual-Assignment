@@ -3,17 +3,14 @@
   box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial;
+    font-family: "Times New Roman", Times, serif;
     scroll-behavior: smooth;
   }
 
 .navbar{
-    background: #FF0000;
+  background-color: #212329;
   height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
+  font-size: 30px;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -23,49 +20,67 @@
   display: flex;
   justify-content: space-between;
   height: 80px;
-  z-index: 1;
   width: 100%;
   margin: 0 auto;
-  padding: 0 50px;
 }
 
-#navbarlogo{
-  background-color: #ff8177;
-  background-image: linear-gradient(to top, #FF0000 0%, #ffb199 100%);
-  background-size: 100%;
-  cursor: pointer;
-  font-size: 3rem;
-  font-family: Arial;
-  color: #000000;
+.logolink {
+  display: block;
+  width: 100%
+  left: 10;
+
+}
+
+.navbarlogo{
+  display: block;
+  height: 100%;
 }
 
 .navbarmenu{
   display: flex;
   align-items: center;
+  padding-top: 4rem;
+}
+
+#myBtn {
+  background: none;
+  text-decoration: none;
+  margin: 0 20px 50px 0px;
+  color: #7a8194;
+  font-size: 15px;
+  font-weight: bold;
   list-style: none;
-  padding-top: 3rem;
+  border: none;
+  text-align: center;
+  letter-spacing: 2.5px;
 }
 
 .navbaritem{
   height: 80px;
-  font-size: 2rem;
+  font-size: 15px;
   font-weight: bold;
+  list-style: none;
+  width: 160px;
+  text-align: center;
 }
 
 .navbarlink{
-  color: #fff;
-  display: inline;
-  align-items: center;
-  justify-content: center;
-  width: 155px;
+  color: #7a8194;
   text-decoration: none;
-  height: 100%;
-  margin: 0 10px 50px 10px;
+  margin: 0 20px 50px 10px;
+  letter-spacing: 2.5px;
 }
 
-#navbaritems :hover{
+.navbaritem :hover{
   cursor: pointer;
   color: #000000;
+  transition: all 0.4s ease-out;
+}
+
+.myBtn :hover {
+  cursor: pointer;
+  color: #000000;
+  padding-left: 500px;
   transition: all 0.4s ease-out;
 }
 
@@ -110,7 +125,8 @@
 /*Body*/
 
 .mainbody{
-  background-image: linear-gradient(to right, white , red, white);
+  /* background-image: linear-gradient(to right, #212329 ,  #3b3f4a, #212329 ); */
+ background-color: #212329;
 }
 
 .dropbtn {
