@@ -19,6 +19,10 @@
   justify-content: center;
 }
 
+#alfaromeo{
+  padding-left: 10%;
+  color: #FF0000;
+}
 .a5text1 {
   width: 40%;
   display: center;
@@ -30,7 +34,7 @@
   width: 100%;
   display: center;
   color: 	#FFFFFF;
-  padding: 20px;
+  padding: 5px 10% 0 10%;
 }
 
 .article5pic1{
