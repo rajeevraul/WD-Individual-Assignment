@@ -24,3 +24,15 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+function imageClick(url) {
+    window.location = url;
+}
+
+function newsletter() {
+  if (document.getElementById("footer-email").value == "") {
+    alert("Please input a valid email address");
+  } else {
+    alert("Thank you for subscribing to our newsletter!");
+  }
+}

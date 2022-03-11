@@ -1,23 +1,33 @@
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="article5.css"/>
     <link rel="stylesheet" href="master.css"/>
-    <title>2022 Season Preparation</title>
+    <title>2022 Season Overview</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
   </head>
 <body>
   <div class="mainbody">
   <nav class="navbar">
     <div class="navbarcontainer">
-        <a href="main.html" class="logolink"><img src="images/navbarlogo.png" class="navbarlogo"></img></a>
+        <a href="index.html" class="logolink"><img src="images/navbarlogo.png" class="navbarlogo"></img></a>
         <ul class="navbarmenu">
-          <li class="navbaritem"><a href="main.html" class="navbarlink">HOME</a></li>
-          <li class="navbaritem"><button id="myBtn" class="myBtn">SUBSCRIBE</button></li>
-          <li class="navbaritem"><a href="#" class="navbarlink">NEWS</a></li>
+          <li class="navbaritem"><a href="index.html" class="navbarlink">HOME</a></li>
+          <li class="navbaritem"><button class="subBtn" id="myBtn">SUBSCRIBE</button></li>
+          <div class="dropdown">
+          	<li class="navbaritem"><button class="newsBtn">NEWS</button></li>
+          	<div class="dropdown-content">
+          		<ul>
+          			<li><a href="article1.html">Introduction to F1</a></li>
+          			<li><a href="article2.html">VERSTAPPEN WINS THE CHAMPIONSHIP</a></li>
+          			<li><a href="article3.html">2021 SEASON REVIEW</a></li>
+          			<li><a href="article4.html">BLAST TO THE PAST</a></li>
+          			<li><a href="article5.html">2022 SEASON PREPARATIONS</a></li>
+          		</ul>
+          	</div>
+          </div>
         </ul>
         <div id="myModal" class="modal">
           <!-- Modal content -->
@@ -27,8 +37,38 @@
           </div>
         </div>
     </div>
-    <script src="main.js" type="text/javascript"></script>
+    <script src="index.js" type="text/javascript"></script>
   </nav>
+  <body>
+    <div class="article5mainpic">
+     <img src="images/mainarticle5.jpg"/>
+     </div>
+     <h1>Alfa Romeo</h1>
+  <div class="articlealign">
+<div class="a5text1">
+  Alfa Romeo announced earlier this month that it would be formally launching its car after the first three-day test at the Circuit de Barcelona-Catalunya, making it the last on the grid to hold an official unveiling.
+  Drivers Valtteri Bottas and Guanyu Zhou took part in testing earlier this week using a black-and-white camouflage livery, but the final design for this year’s car has now been revealed.
+  The team retains the traditional colours of the Alfa Romeo brand for this season, but has switched from a majority white livery to a chiefly red design.
+  The majority of the nose, the bulkhead and the halo have all turned red on this year’s car, while the engine cover also turns red, with the addition of ‘Alfa Romeo’ written in an old-fashioned font.
+  The livery was created by Alfa Rome’s Centro Stile design centre. According to the team, it is “a stunning yet subtle nod to the past, recalling historical designs of years past and the heritage of Alfa Romeo and Sauber Motorsport, in the Hinwil team’s 30th year in Formula 1.”
+  “The start of the season is always an exciting time, one in which we see the fruit of the work of hundreds of people over a long period of time,” said team principal Frederic Vasseur.
+  “The C42 is a car we look forward to seeing racing, not just because it is the first we built in this new regulations cycle, one in which racing should be closer and more thrilling, but because we have the utmost confidence in this car helping the team make a big step forward towards the front of the grid.”
+  </div>
+    <div class="article5pic1">
+     <img src="images/alfaromeo1.jpg"/>
+   </div>
+  </div>
+  <div class="a5text2">
+  The official launch of the C42 car comes after a difficult outing for Alfa Romeo in Barcelona, where it slumped towards the rear of the mileage charts.
+  The three days of running were interrupted by a number of issues, limiting the team to just 175 laps between Bottas, Zhou and reserve driver Robert Kubica. Only Haas completed fewer laps during the test.
+  Bottas joined the team from Mercedes for the 2022 season, and said earlier this week that he was enjoying his early days with Alfa Romeo despite only managing 54 laps in the first test.
+  “The size of the team is quite a bit smaller, but it’s not necessarily a bad thing, and at least so far I’ve been enjoying it,” Bottas said.
+  “There are so many new people and new things to get used to and learn, and still I would say I am in the adaptation phase of actually getting properly to know the team and how everything works. But that’s part of learning.
+  “I would say it’s been a pretty quick process getting used to it. But there are good vibes. I’ve been really, really enjoying it, and with a bit more track time, I would be even happier, but at least it’s been fun.”
+  The Alfa Romeo C42 will make its next on-track appearance in the second pre-season test, which takes place in Bahrain from 10-12 March, before the season-opening Bahrain Grand Prix on 20 March.
+  </div>
+</body>
+
       <footer>
         <div class="footercontainer">
           <div class="footer">
@@ -47,7 +87,7 @@
             <div class="footer-email-form">
               <h2>Join our newsletter</h2>
               <input type="email" placeholder="Enter your email address"id="footer-email">
-              <input type="submit" value="Sign Up" id="footer-email-btn">
+              <input type="submit" value="Sign Up" id="footer-email-btn" onclick="newsletter();"/>
             </div>
           </div>
         </div>

@@ -1,75 +1,11 @@
-/*Navigation Bar*/
-*{
-  box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Arial;
-    scroll-behavior: smooth;
-  }
-
-.navbar{
-    background: #FF0000;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-}
-
-.navbarcontainer{
-  display: flex;
-  justify-content: space-between;
-  height: 80px;
-  z-index: 1;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 50px;
-}
-
-#navbarlogo{
-  background-color: #ff8177;
-  background-image: linear-gradient(to top, #FF0000 0%, #ffb199 100%);
-  background-size: 100%;
-  cursor: pointer;
-  font-size: 3rem;
-  font-family: Arial;
-  color: #000000;
-}
-
-.navbarmenu{
-  display: flex;
-  align-items: center;
-  list-style: none;
-  padding-top: 3rem;
-}
-
-.navbaritem{
-  height: 80px;
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.navbarlink{
-  color: #fff;
-  display: inline;
-  align-items: center;
-  justify-content: center;
-  width: 155px;
-  text-decoration: none;
-  height: 100%;
-  margin: 0 10px 50px 10px;
-}
-
-#navbaritems :hover{
-  cursor: pointer;
-  color: #000000;
-  transition: all 0.4s ease-out;
-}
 /* Body */
+.mainbody{
+ background-color: #212329;
+}
 
+.articles:hover {
+  cursor: pointer;
+}
 .articlealign {
   display: flex;
   justify-content: center;
@@ -78,7 +14,9 @@
 .article1mainpic {
   display: flex;
   justify-content: center;
+  padding: 20px;
 }
+
 .article1mainpic img {
   border-radius: 20px;
   width: 50%;
@@ -87,6 +25,8 @@
 
 .a1text1 {
   width: 40%;
+  display: center;
+  color: 	#FFFFFF;
 }
 
 .article1pic1{
@@ -95,85 +35,4 @@
 .article1pic1 img{
   border-radius: 20px;
    width: 100%;
-}
-
-/*Footer*/
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: Arial;
-}
-
-.footercontainer{
-  background-color: #212329;
-  padding: 4rem 0 4rem 0;
-}
-
-.footer{
-  width: 80%;
-  height: 35vh;
-  background-color: #212329;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 0 auto;
-}
-
-.footerhead{
-  display: flex;
-  flex-direction: column;
-  margin-right: 4rem;
-}
-
-.footerhead h2{
-  margin-bottom: 2rem;
-}
-
-.footerhead a{
-  color: #fff;
-  text-decoration: none;
-  margin-bottom: 0.5rem;
-}
-
-.footerhead a:hover{
-  color: red;
-  transition: 0.5s ease-out;
-}
-
-.footer-email h2{
-  margin-bottom: 2rem;
-}
-
-#footer-email{
-  width: 250px;
-  height: 40px;
-  border-radius: 4px;
-  outline: none;
-  border: none;
-  padding-left: 0.5rem;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
-
-#footer-email::placeholder{
-  color: #b1b1b1;
-}
-
-#footer-email-btn{
-  width: 100px;
-  height: 40px;
-  border-radius: 4px;
-  background-color: #F9423D;
-  outline: none;
-  border: none;
-  color: #FFFF;
-  font-size: 1rem;
-}
-
-#footer-email-btn:hover{
-  cursor: pointer;
-  background-color: #337AF1;
-  transition: all 0.4s ease-out;
 }

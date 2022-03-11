@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="master.css"/>
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  </head>
+<body>
+  <div class="mainbody">
+  <nav class="navbar">
+    <div class="navbarcontainer">
+        <a href="index.html" class="logolink"><img src="images/navbarlogo.png" class="navbarlogo"></img></a>
+        <ul class="navbarmenu">
+          <li class="navbaritem"><a href="index.html" class="navbarlink">HOME</a></li>
+          <li class="navbaritem"><button class="subBtn" id="myBtn">SUBSCRIBE</button></li>
+          <div class="dropdown">
+          	<li class="navbaritem"><button class="newsBtn">NEWS</button></li>
+          	<div class="dropdown-content">
+          		<ul>
+          			<li><a href="article1.html">Introduction to F1</a></li>
+          			<li><a href="article2.html">VERSTAPPEN WINS THE CHAMPIONSHIP</a></li>
+          			<li><a href="article3.html">2021 SEASON REVIEW</a></li>
+          			<li><a href="article4.html">BLAST TO THE PAST</a></li>
+          			<li><a href="article5.html">2022 SEASON PREPARATIONS</a></li>
+          		</ul>
+          	</div>
+          </div>
+        </ul>
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+          </div>
+        </div>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+  </nav>
+      <section>
+        <div class="mainpic">
+            <img src="https://wallpaper.dog/large/20502163.jpg"</img>
+        </div>
+      </section>
+      <section class="articles">
+        <div class="article">
+     <img src="images/mainarticle1.png" onclick="imageClick('article1.html')"/>
+         <p>Introduction to F1. So, you're new to F1 and want to find out all about the sport? Well fear not we have you covered.</p>
+        </div>
+        <div class="article">
+     <img src="images/mainarticle2.jpg" onclick="imageClick('article2.html')"/>
+          <p>Max Verstappen is the world champion</p>
+        </div>
+     </section>
+     <section class="articles">
+        <div class="article">
+     <img src="images/mainarticle3.jpg" onclick="imageClick('article3.html')"/>
+         <p>2021 Season Review</p>
+        </div>
+        <div class="article">
+     <img src="images/mainarticle4.jpg" onclick="imageClick('article4.html')"/>
+          <p>Blast to the past</p>
+        </div>
+     </section>
+     <section class="articles">
+        <div class="article">
+     <img src="images/mainarticle5.jpg" onclick="imageClick('article5.html')"/>
+         <p>First look at the new 2022 season cars>
+        </div>
+     </section>
+     <div class="teams">
+      <div class="f1teams">
+          <img src="images/alfaromeo.png" class="alfaromeo"/>
+           <div class="readmore">
+             <div class="text">READ MORE</div>
+           </div>
+
+       </div>
+  </div>
+</div>
+ </body>
+
+<footer>
+  <div class="footercontainer">
+    <div class="footer">
+      <div class="footerhead footer-1">
+        <h2>General</h2>
+        <a href="#">Drivers</a>
+        <a href="#">Teams</a>
+        <a href="#">2022 Schedule</a>
+      </div>
+      <div class="footerhead footer-2">
+        <h2>Contact Us</h2>
+        <a href="#">Phone</a>
+        <a href="#">Email</a>
+        <a href="#">Social Media</a>
+      </div>
+      <div class="footer-email-form">
+        <h2>Join our newsletter</h2>
+        <input type="email" placeholder="Enter your email address"id="footer-email">
+        <input type="submit" value="Sign Up" id="footer-email-btn" onclick="newsletter();"/>
+      </div>
+    </div>
+  </div>
+</footer>
+</html>

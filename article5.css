@@ -1,0 +1,42 @@
+.mainbody{
+ background-color: #212329;
+}
+
+.article5mainpic {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.article5mainpic img {
+  border-radius: 20px;
+  width: 50%;
+  padding: 5px 10px 0 10px;
+}
+
+.articlealign {
+  display: flex;
+  justify-content: center;
+}
+
+.a5text1 {
+  width: 40%;
+  display: center;
+  color: 	#FFFFFF;
+  margin: 10px;
+}
+
+.a5text2 {
+  width: 100%;
+  display: center;
+  color: 	#FFFFFF;
+  padding: 20px;
+}
+
+.article5pic1{
+ width: 40%;
+}
+.article5pic1 img{
+  border-radius: 20px;
+  width: 100%;
+}
