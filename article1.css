@@ -1,5 +1,5 @@
 /* Body */
-.mainbody{
+.mainbody {
  background-color: #212329;
 }
 
@@ -10,10 +10,6 @@
 
 .articles:hover {
   cursor: pointer;
-}
-.articlealign {
-  display: flex;
-  justify-content: center;
 }
 
 .article1mainpic {
@@ -28,16 +24,67 @@
   padding: 5px 10px 0 10px;
 }
 
+.articlealignleft {
+  display: flex;
+  justify-content: center;
+}
+
 .a1text1 {
   width: 40%;
-  display: center;
+  text-align: justify;
   color: 	#FFFFFF;
+  padding: 10px;
 }
 
 .article1pic1{
  width: 40%;
 }
+
 .article1pic1 img{
   border-radius: 20px;
-   width: 100%;
+  width: 100%;
+}
+
+.a1text2 {
+  width: 100%;
+  text-align: justify;
+  color: 	#FFFFFF;
+  padding: 10px 150px 20px 150px;
+}
+
+.articlealignright {
+  display: flex;
+  justify-content: center;
+}
+
+.a1text3 {
+  width: 40%;
+  display: center;
+  color: 	#FFFFFF;
+  padding: 10px;
+  text-align: justify;
+}
+
+.article1pic2{
+ width: 40%;
+}
+
+.article1pic2 img{
+  border-radius: 20px;
+  width: 100%;
+}
+
+
+.countdown {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 10px;
+  color: #FFFAFA;
+  padding: 10px;
+}
+#demo {
+  text-align: center;
+  font-size: 100px;
+  margin-top: 10px;
+  color: #FFFAFA;
 }
