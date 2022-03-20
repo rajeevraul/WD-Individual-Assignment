@@ -47,6 +47,9 @@
   transition: 1.5s;
 }
 
+.article h1{
+  display: fl;
+}
 .article:hover {
   height: 60%;
   width: 55%;
@@ -59,28 +62,39 @@
   border-radius: 10px;
 }
 
-.article p{
+.favteams {
+  border: 2px solid #FF0000;
+  padding: 60px 15px 30px 15px;
+  margin: 20px 20px 0px 20px;
+  border-radius: 30px;
+  z-index: -1;
 }
 
 .teamheader {
  text-align: center;
  margin-top: 50px;
- background-color: #FFFF;
+ margin-bottom: -35px;
+ color: #bcc0c9;
+ letter-spacing: 2.5px;
+ font-size: 20px;
+ position: relative;
 }
-.teams {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
+
+.teamheader span {
+  background-color: #212329;
+  padding: 10px;
 }
+
 .f1teams img {
   width: 100%;
   display: block;
+  border-radius: 10px;
 }
 
 .f1teams {
   position: relative;
   padding: 0;
-  width: 100%;
+  width: 300px;
   display: block;
   cursor: pointer;
   overflow: hidden;
@@ -89,12 +103,11 @@
 
 .readmore {
   opacity: 0;
-  font-size: 30px;
+  font-size: 25px;
   position: absolute;
   top: 0;
   left: 0;
-  color: #1c87c9;
-  background-color: rgba(200, 200, 200, 0.5);
+  background-color: rgba(200, 200, 200, 0.6);
   width: 100%;
   height: 100%;
   -webkit-transition: all 400ms ease-out;
@@ -103,6 +116,12 @@
   -ms-transition: all 400ms ease-out;
   transition: all 400ms ease-out;
   text-align: center;
+  border-radius: 10px;
+}
+
+.readmore a{
+  color: black;
+  text-decoration: none;
 }
 
 .f1teams .readmore:hover {
@@ -120,6 +139,6 @@
 
 .f1teams .readmore:hover .text {
   opacity: 1;
-  transform: translateY(100px);
-  -webkit-transform: translateY(100px);
+  transform: translateY(80px);
+  -webkit-transform: translateY(80px);
 }
