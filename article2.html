@@ -4,31 +4,79 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="article2.css"/>
     <link rel="stylesheet" href="master.css"/>
     <title>2021 World Champion</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
   </head>
 <body>
   <div class="mainbody">
-  <nav class="navbar">
-    <div class="navbarcontainer">
-        <a href="main.html" class="logolink"><img src="images/navbarlogo.png" class="navbarlogo"></img></a>
-        <ul class="navbarmenu">
-          <li class="navbaritem"><a href="main.html" class="navbarlink">HOME</a></li>
-          <li class="navbaritem"><button id="myBtn" class="myBtn">SUBSCRIBE</button></li>
-          <li class="navbaritem"><a href="#" class="navbarlink">NEWS</a></li>
-        </ul>
-        <div id="myModal" class="modal">
-          <!-- Modal content -->
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Some text in the Modal..</p>
+    <nav class="navbar">
+      <div class="navbarcontainer">
+          <a href="index.html" class="logolink"><img src="images/navbarlogo.png" class="navbarlogo"></img></a>
+          <ul class="navbarmenu">
+            <li class="navbaritem"><a href="index.html" class="navbarlink">HOME</a></li>
+            <li class="navbaritem"><button class="subBtn" id="myBtn">SUBSCRIBE</button></li>
+            <div class="dropdown">
+              <li class="navbaritem"><button class="newsBtn">NEWS</button></li>
+              <div class="dropdown-content">
+                <ul>
+                  <li><a href="article1.html">Introduction to F1</a></li>
+                  <li><a href="article2.html">VERSTAPPEN WINS THE CHAMPIONSHIP</a></li>
+                  <li><a href="article3.html">2021 SEASON REVIEW</a></li>
+                  <li><a href="article4.html">BLAST TO THE PAST</a></li>
+                  <li><a href="article5.html">2022 SEASON PREPARATIONS</a></li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img src="images/navbarlogo.png"/>
+              <h1 class="subscribedialogue">Subscribe now for exclusive behind the scenes content and stand a chance to win tickets!
+                <h2>$2.99 per month</h2>
+                <input id="promocode" onChange="promocode();" type="text" placeholder="Apply promo code here" name="promocode" list="promolist">
+              </h1>
+            </div>
           </div>
-        </div>
-    </div>
-    <script src="main.js" type="text/javascript"></script>
-  </nav>
+      </div>
+      <script src="index.js" type="text/javascript"></script>
+    </nav>
+    <h1 class="article2header">Max Verstappen wins the 2021 Drivers Championship</h1>
+    <div class="article2mainpic">
+     <img src="images/mainarticle2.jpg"/>
+     </div>
+     <div class="a2text1">
+        Red Bull's Max Verstappen won the Formula One championship, denying Lewis Hamilton a record eighth, with a last-lap overtake to win a season-ending Abu Dhabi Grand Prix on Sunday amid controversy and high drama.
+        Hamilton's Mercedes team took the constructors' title for an unprecedented eighth year in a row but their run of double dominance was ended by the 24-year-old Dutch driver, his country's first champion.
+        Two post-race protests, which might have overturned the outcome, were dismissed but Mercedes refused to drop the matter and said they had filed notice of intention to appeal.
+        "It's insane," said Verstappen of a race that started with fans on the edge of their seats and ended in uproar, with lawyers looming.
+        Verstappen's hopes had soared when he qualified on pole position, sunk when he lost the lead at the start and rose again as the safety car came out and race director Michael Masi decisively pushed the boundaries late in the race.
+        "This is unbelievable guys! Can we do this for another 10-15 years together?" he had said over the radio after the most emotional lap of his life.
+        "We needed a bit of luck and we got it," said team boss Christian Horner, who had said earlier in the race that it would take a miracle to win and hailed the victory as Red Bull's greatest achievement.
+        The floodlit race at Yas Marina avoided the collision many had feared, with Verstappen sure to be champion if Hamilton failed to score, but instead left arguments raging long after the finish.
+        As Verstappen and Red Bull bosses shed tears of joy, Mercedes's management turned on race director Masi.
+        "Michael, this isn't right," Mercedes principal Toto Wolff had said over the radio to Masi after the Australian's handling of the ending of the safety car period left some feeling Hamilton was robbed.
+        The safety car had been deployed after Canadian Nicholas Latifi crashed his Williams with five laps to go and Masi then decided not to demand all lapped cars pass it before resuming racing.
+        That allowed Verstappen -- on fresher, faster tyres after strategic stops -- to close and go wheel-to-wheel with Hamilton for the lead.
+        Just when it seemed the race would be finishing behind the safety car, which would have handed Hamilton the title, it turned into a sprint finish. We were screaming at the end to let them race," said Horner, whose partners Honda are now departing the sport. "It is unheard of to leave the cars unlapped. They wanted to get the race going again. They absolutely made the right call."
+        Hamilton, who had been heading for a fourth successive race win, congratulated the new champion.
+        "I think we did an amazing job this year, with my team. Everyone back at the factory, all the men and women we have, and here, worked so hard this whole year," he said.
+        "It's been the most difficult of seasons and I'm so proud of them, so grateful to be a part of the journey with them. We gave it everything this last part of the season and never gave up, that's the most important thing."
+        Verstappen ended the season with 10 wins to Hamilton's eight, having also led more laps and taken more poles and podiums.
+        After 22 races, Verstappen had 395.5 points to Hamilton's 387.5. Mercedes scored 613.5 to Red Bull's 585.5.
+        Ferrari's Carlos Sainz finished the race in third place, with AlphaTauri's Yuki Tsunoda fourth and team mate Pierre Gasly fifth.
+        Hamilton's team mate Valtteri Bottas was sixth in his last race for the team, ahead of McLaren's Lando Norris and the Alpines of Esteban Ocon and Fernando Alonso.
+        Ferrari's Charles Leclerc took the final point with the Italian team ending the season third overall.
+        Verstappen's Mexican team mate Sergio Perez, hailed as a "legend" by the Dutch driver for slowing Hamilton significantly while leading earlier in the race, was retired in the pits.
+        The race hit immediate controversy on the opening lap when the title rivals almost collided after the Briton had taken the lead.
+        Hamilton was pushed wide, cutting a corner as he came back still in front of Verstappen who had made a lunge on the inside and seemed to be ahead at the turn, and stewards decided no investigation was needed.
+        Horner told Sky Sports television from the pitwall that there was "a total lack of consistency" in the stewards' decision and his team now had to "do it the hard way".
+
+     </div>
+  </body>
       <footer>
         <div class="footercontainer">
           <div class="footer">
