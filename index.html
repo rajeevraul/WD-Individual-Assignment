@@ -10,6 +10,7 @@
   </head>
 <body>
   <div class="mainbody">
+<!-- Navigation bar -->
   <nav class="navbar">
     <div class="navbarcontainer">
         <a href="index.html" class="logolink"><img src="images/navbarlogo.png" class="navbarlogo"></img></a>
@@ -40,17 +41,28 @@
               <h1>Subscribe now for exclusive behind the scenes content and stand a chance to win tickets!</h1>
             </div>
             <div class="subscribeplan">
-              <h3>Choose plan:</h3>
-              <h3>$2.99 per month</h3>
+              <h3>Choose a plan:</h3>
+              <table id="plan" onloadstart="function()">
+                 <tr>
+                     <td><label for="plan1">$2.99 per month</label><input id="plan1" type="checkbox" value="1"/></td>
+                 </tr>
+                 <tr>
+                     <td><label for="plan2">$9.99 per year</label><input id="plan2" type="checkbox" value="2"/></td>
+                 </tr>
+              </table>
             </div>
-              <!-- <input id="promocode" onChange="promocode();" type="text" placeholder="Apply promo code here" name="promocode" list="promolist">
-              <! <input type="email" placeholder="Enter your email address"id="modal-email">
-              <input type="submit" value="Subscribe" id="modal-email-btn" onclick="newsletter();"/> -->
+            <div class="promo">
+               <input id="promocode" onChange="promocode();" type="text" placeholder="Apply promo code here" name="promocode" list="promolist">
+            </div>
+               <br>
+             <input type="email" placeholder="Enter your email address"id="modal-email">
+              <input type="submit" value="Subscribe" id="modal-email-btn" onclick="subscribe();"/>
           </div>
         </div>
     </div>
     <script src="index.js" type="text/javascript"></script>
   </nav>
+  <!--Main Body-->
       <section>
         <div class="mainvid">
             <video muted autoplay loop>
@@ -63,13 +75,14 @@
       </section>
       <section class="articles">
         <div class="article">
-     <img src="images/mainarticle1.png" onclick="imageClick('article1.html')"/>
-         <h1>Introduction to F1</h1>
-         <p>So you're new to F1 and want to find out all about the sport? Well fear not we have you covered.</p>
+          <img src="images/mainarticle1.png" onclick="imageClick('article1.html')"/>
+           <h1>Introduction to F1</h1>
+           <p>So you're new to F1 and want to find out all about the sport? Well fear not we have you covered.</p>
+           <a href=article1.html>Read more here</a>
         </div>
         <div class="article">
      <img src="images/mainarticle2.jpg" onclick="imageClick('article2.html')"/>
-          <p>Max Verstappen is the world champion</p>
+          <p>Max Verstappen is the world champion after last lap drama</p>
         </div>
      </section>
      <section class="articles">
@@ -79,85 +92,85 @@
         </div>
         <div class="article">
      <img src="images/mainarticle4.jpg" onclick="imageClick('article4.html')"/>
-          <p>Blast to the past Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Blast to the past</p>
         </div>
      </section>
      <section class="articles">
         <div class="article">
      <img src="images/mainarticle5.jpg" onclick="imageClick('article5.html')"/>
-         <p>First look at the new 2022 season cars Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.>
+         <p>First look at the new 2022 season cars</p>
         </div>
      </section>
-     <h1 class="teamheader" id="headerteam"><span>LEARN MORE ABOUT YOUR FAVOURITE TEAMS NOW!</span></h1>
+     <h1 class="teamheader" id="headerteam"><span>SEE YOUR FAVOURITE TEAM CAR REAVEALS NOW!</span></h1>
      <section class="favteams">
           <div class="articles">
            <div class="f1teams">
-               <img src="images/alfaromeo.png"/>
+               <img src="images/alfaromeologo.png"/>
                 <div class="readmore">
                   <div class="text"><a href=article5.html#alfaromeo>READ MORE</a></div>
                 </div>
             </div>
             <div class="f1teams">
-                <img src="images/alpine.jpg"/>
+                <img src="images/alphataurilogo.jpg"/>
                  <div class="readmore">
-                   <div class="text"><a href=article5.html#alfaromeo>READ MORE</a></div>
+                   <div class="text"><a href=article5.html#alphatauri>READ MORE</a></div>
                  </div>
              </div>
-             <div class="f1teams">
-                 <img src="images/alphatauri.jpg"/>
-                  <div class="readmore">
-                    <div class="text"><a href=article5.html#alfaromeo>READ MORE</a></div>
-                  </div>
-              </div>
-              <div class="f1teams">
-               <img src="images/astonmartin.jpg"/>
+            <div class="f1teams">
+                <img src="images/alpinelogo.jpg"/>
                  <div class="readmore">
-                   <div class="text"><a href=article5.html#alfaromeo>READ MORE</a></div>
+                   <div class="text"><a href=article5.html#alpine>READ MORE</a></div>
+                 </div>
+             </div>
+              <div class="f1teams">
+               <img src="images/astonmartinlogo.jpg"/>
+                 <div class="readmore">
+                   <div class="text"><a href=article5.html#astonmartin>READ MORE</a></div>
                  </div>
               </div>
               <div class="f1teams">
-               <img src="images/ferrari.jpg"/>
+               <img src="images/ferrarilogo.jpg"/>
                  <div class="readmore">
-                   <div class="text"><a href=article5.html#alfaromeo>READ MORE</a></div>
+                   <div class="text"><a href=article5.html#ferrari>READ MORE</a></div>
                  </div>
               </div>
           </div>
           <div class="articles">
            <div class="f1teams">
-               <img src="images/haas.jpg"/>
+               <img src="images/haaslogo.jpg"/>
                 <div class="readmore">
-                  <div class="text"><a href=article5.html#alfaromeo>READ MORE</a></div>
+                  <div class="text"><a href=article5.html#haas>READ MORE</a></div>
                 </div>
             </div>
             <div class="f1teams">
-                <img src="images/mclaren.jpg"/>
+                <img src="images/mclarenlogo.jpg"/>
                  <div class="readmore">
-                   <div class="text"><a href=article5.html#alfaromeo>READ MORE</a></div>
+                   <div class="text"><a href=article5.html#mclaren>READ MORE</a></div>
                  </div>
              </div>
              <div class="f1teams">
-                 <img src="images/mercedes.jpg"/>
+                 <img src="images/mercedeslogo.jpg"/>
                   <div class="readmore">
-                    <div class="text"><a href=article5.html#alfaromeo>READ MORE</a></div>
+                    <div class="text"><a href=article5.html#mercedes>READ MORE</a></div>
                   </div>
               </div>
               <div class="f1teams">
-               <img src="images/redbull.jpg"/>
+               <img src="images/redbulllogo.jpg"/>
                  <div class="readmore">
-                   <div class="text"><a href=article5.html#alfaromeo>READ MORE</a></div>
+                   <div class="text"><a href=article5.html#redbull>READ MORE</a></div>
                  </div>
               </div>
               <div class="f1teams">
-               <img src="images/williams.jpg"/>
+               <img src="images/williamslogo.jpg"/>
                  <div class="readmore">
-                   <div class="text"><a href=article5.html#alfaromeo>READ MORE</a></div>
+                   <div class="text"><a href=article5.html#williams>READ MORE</a></div>
                  </div>
               </div>
           </div>
       </section>
-</div>
- </body>
-
+ </div>
+</body>
+<!--Footer-->
 <footer>
   <div class="footercontainer">
     <div class="footer">

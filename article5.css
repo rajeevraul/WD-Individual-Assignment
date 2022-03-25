@@ -19,10 +19,6 @@
   justify-content: center;
 }
 
-#alfaromeo{
-  padding-left: 10%;
-  color: #FF0000;
-}
 .a5text1 {
   width: 40%;
   display: center;
@@ -37,10 +33,61 @@
   padding: 5px 10% 0 10%;
 }
 
-.article5pic1{
+.article5pic1 {
  width: 40%;
 }
-.article5pic1 img{
+
+.article5pic1 img {
   border-radius: 20px;
   width: 100%;
+}
+
+#alfaromeo{
+  padding-left: 10%;
+  color: #FF0000;
+}
+
+#alphatauri {
+  padding-left: 10%;
+  color: #FFFFF0;
+}
+
+#alpine {
+  padding-left: 10%;
+  color: #4169E1;
+}
+
+#astonmartin {
+  padding-left: 10%;
+  color: #00FF00;
+}
+
+#ferrari {
+  padding-left: 10%;
+  color: #FF0000;
+}
+
+#haas {
+  padding-left: 10%;
+  color: #FF0000;
+}
+
+#mclaren{
+  padding-left: 10%;
+  color: #FFA500;
+}
+
+#mercedes {
+  padding-left: 10%;
+  color: #C0C0C0;
+}
+
+#redbull {
+  padding-left: 10%;
+  color: #FF0000;
+}
+
+#williams {
+  padding-left: 10%;
+  color: #FFFFFF;
 }

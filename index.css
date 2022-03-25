@@ -47,9 +47,10 @@
   transition: 1.5s;
 }
 
-.article h1{
-  display: fl;
+.article h1 p{
+
 }
+
 .article:hover {
   height: 60%;
   width: 55%;

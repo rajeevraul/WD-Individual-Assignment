@@ -137,22 +137,23 @@
   text-align: center;
 }
 
-/* .modal-content h2 {
-  text-align: center;
-} */
-.subscribeplan h3 {
-  display: inline-block;
+.subscribeplan {
+  padding: 10px;
+  margin: 5px solid black;
+}
+
+.promo {
+ width: 400px;
 }
 
 #modal-email{
-  width: 250px;
+  width: 50%;
   height: 40px;
   border-radius: 4px;
-  outline: none;
-  border: none;
-  padding-left: 8px;
   font-size: 16px;
   margin-bottom: 16px;
+  border: 2px solid black;
+  justify-content: center;
 }
 
 #modal-email::placeholder{

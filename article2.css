@@ -5,7 +5,6 @@
 .article2header {
   text-align: center;
   color: #FFFAFA;
-
 }
 
 .article2mainpic {
@@ -25,4 +24,16 @@
   text-align: justify;
   color: 	#FFFFFF;
   padding: 10px 150px 20px 150px;
+}
+
+.gif {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.embeddedvideo {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
 }

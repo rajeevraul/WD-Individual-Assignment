@@ -21,6 +21,15 @@ window.onclick = function(event) {
   }
 }
 
+/*Subscribing alert*/
+function subscribe() {
+  if (document.getElementById("modal-email").value == "") {
+    alert("Please input a valid email address");
+  } else {
+    alert("Thank you for subscribing! Payment details will be emailed to you");
+  }
+}
+
 /*URL Locator*/
 function imageClick(url) {
     window.location = url;

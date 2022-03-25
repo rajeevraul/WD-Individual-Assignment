@@ -1,0 +1,27 @@
+.mainbody {
+ background-color: #212329;
+}
+
+.article3header {
+  text-align: center;
+  color: #FFFAFA;
+}
+
+.article3mainpic {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.article3mainpic img {
+  border-radius: 20px;
+  width: 50%;
+  padding: 5px 10px 0 10px;
+}
+
+.text {
+  width: 100%;
+  text-align: justify;
+  color: 	#FFFFFF;
+  padding: 10px 150px 20px 150px;
+}
