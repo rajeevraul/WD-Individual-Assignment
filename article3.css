@@ -29,6 +29,12 @@
   line-height: 1.6;
 }
 
+.link {
+  font-weight: bold;
+  text-decoration: none;
+  color: #FFFAFA;
+}
+
 .subheaders {
   margin: 10px 0 10px 0;
 }

@@ -7,6 +7,11 @@
     scroll-behavior: smooth;
   }
 
+/* @font-face {
+    font-family: Manrope;
+    src: url(Fonts/Manrope-Regular.ttf);
+  } */
+
 .navbar{
   background-color: #212329;
   height: 80px;
@@ -146,6 +151,39 @@
  width: 400px;
 }
 
+.choose {
+  text-align: left;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.choose span {
+  display: flex;
+
+}
+
+.choose span label {
+  width: 70%;
+  display: flex;
+  border: 5px;
+}
+
+.choose span input {
+    margin-top: 15px;
+    display: block;
+}
+#monthly {
+
+}
+
+#yearly {
+
+}
+
 #modal-email{
   width: 50%;
   height: 40px;
@@ -176,6 +214,7 @@
   background-color: #337AF1;
   transition: all 0.4s ease-out;
 }
+
  /* News button styling*/
 .newsBtn {
   background: none;

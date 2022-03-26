@@ -30,6 +30,24 @@ function subscribe() {
   }
 }
 
+/*Promo code interaction*/
+function totalcost()
+{
+const radioButtons = document.querySelectorAll('input[name="plan"]');
+for (const radioButton of radioButtons) {
+              if (radioButton.checked) {
+                  selectedSize = radioButton.value;
+              }
+        }
+        total = selectedSize;
+        if(document.getElementById("promocode").value == "NEWUSER")
+        {
+          total = Math.round(selectedSize *0.8  * 100) / 100;
+          console.log("working");
+        }
+        document.getElementById("totalcost").value = total;
+}
+
 /*URL Locator*/
 function imageClick(url) {
     window.location = url;
