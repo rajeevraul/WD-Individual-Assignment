@@ -24,6 +24,7 @@
   display: center;
   color: 	#FFFFFF;
   margin: 10px;
+  line-height: 1.6;
 }
 
 .a5text2 {
@@ -31,13 +32,17 @@
   display: center;
   color: 	#FFFFFF;
   padding: 5px 10% 0 10%;
+  line-height: 1.6;
+  width: 80%;
+  border: 5px;
+  margin: auto;
 }
 
-.article5pic1 {
+.article5pic {
  width: 40%;
 }
 
-.article5pic1 img {
+.article5pic img {
   border-radius: 20px;
   width: 100%;
 }
