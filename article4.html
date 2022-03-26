@@ -1,189 +1,188 @@
-
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="article4.css"/>
-    <link rel="stylesheet" href="master.css"/>
-    <title>Blast To The Past</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-  </head>
-<body>
-  <div class="mainbody">
-    <!-- Navigation bar -->
-      <nav class="navbar">
-        <div class="navbarcontainer">
-            <a href="index.html" class="logolink"><img src="images/navbarlogo.png" class="navbarlogo"></img></a>
-            <ul class="navbarmenu">
-              <li class="navbaritem"><a href="index.html" class="navbarlink">HOME</a></li>
-              <li class="navbaritem"><button class="subBtn" id="myBtn">SUBSCRIBE</button></li>
-              <div class="dropdown">
-              	<li class="navbaritem"><button class="newsBtn">NEWS</button></li>
-              	<div class="dropdown-content">
-              		<ul>
-              			<li><a href="article1.html">Introduction to F1</a></li>
-              			<li><a href="article2.html">VERSTAPPEN WINS THE CHAMPIONSHIP</a></li>
-              			<li><a href="article3.html">2021 SEASON REVIEW</a></li>
-              			<li><a href="article4.html">BLAST TO THE PAST</a></li>
-              			<li><a href="article5.html">2022 SEASON PREPARATIONS</a></li>
-              		</ul>
-              	</div>
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="stylesheet" href="article4.css"/>
+      <link rel="stylesheet" href="master.css"/>
+      <title>Blast To The Past</title>
+      <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    </head>
+  <body>
+    <div class="mainbody">
+      <!-- Navigation bar -->
+        <nav class="navbar">
+          <div class="navbarcontainer">
+              <a href="index.html" class="logolink"><img src="images/navbarlogo.png" class="navbarlogo"></img></a>
+              <ul class="navbarmenu">
+                <li class="navbaritem"><a href="index.html" class="navbarlink">HOME</a></li>
+                <li class="navbaritem"><button class="subBtn" id="myBtn">SUBSCRIBE</button></li>
+                <div class="dropdown">
+                	<li class="navbaritem"><button class="newsBtn">NEWS</button></li>
+                	<div class="dropdown-content">
+                		<ul>
+                			<li><a href="article1.html">Introduction to F1</a></li>
+                			<li><a href="article2.html">VERSTAPPEN WINS THE CHAMPIONSHIP</a></li>
+                			<li><a href="article3.html">2021 SEASON REVIEW</a></li>
+                			<li><a href="article4.html">BLAST TO THE PAST</a></li>
+                			<li><a href="article5.html">2022 SEASON PREPARATIONS</a></li>
+                		</ul>
+                	</div>
+                </div>
+              </ul>
+              <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <div class="modallogo">
+                    <img src="images/navbarlogo.png"/>
+                  </div>
+                  <div class="subscribedialogue">
+                    <h1>Subscribe now for exclusive behind the scenes content and stand a chance to win tickets!</h1>
+                  </div>
+                  <div class="subscribeplan">
+                    <h3>Choose a plan:</h3>
+                    <table id="plan" onloadstart="function()">
+                       <tr>
+                           <td><label for="plan1">$2.99 per month</label><input id="plan1" type="checkbox" value="1"/></td>
+                       </tr>
+                       <tr>
+                           <td><label for="plan2">$9.99 per year</label><input id="plan2" type="checkbox" value="2"/></td>
+                       </tr>
+                    </table>
+                  </div>
+                  <div class="promo">
+                     <input id="promocode" onChange="promocode();" type="text" placeholder="Apply promo code here" name="promocode" list="promolist">
+                  </div>
+                     <br>
+                   <input type="email" placeholder="Enter your email address"id="modal-email">
+                    <input type="submit" value="Subscribe" id="modal-email-btn" onclick="subscribe();"/>
+                </div>
               </div>
-            </ul>
-            <div id="myModal" class="modal">
-              <!-- Modal content -->
-              <div class="modal-content">
-                <span class="close">&times;</span>
-                <div class="modallogo">
-                  <img src="images/navbarlogo.png"/>
-                </div>
-                <div class="subscribedialogue">
-                  <h1>Subscribe now for exclusive behind the scenes content and stand a chance to win tickets!</h1>
-                </div>
-                <div class="subscribeplan">
-                  <h3>Choose a plan:</h3>
-                  <table id="plan" onloadstart="function()">
-                     <tr>
-                         <td><label for="plan1">$2.99 per month</label><input id="plan1" type="checkbox" value="1"/></td>
-                     </tr>
-                     <tr>
-                         <td><label for="plan2">$9.99 per year</label><input id="plan2" type="checkbox" value="2"/></td>
-                     </tr>
-                  </table>
-                </div>
-                <div class="promo">
-                   <input id="promocode" onChange="promocode();" type="text" placeholder="Apply promo code here" name="promocode" list="promolist">
-                </div>
-                   <br>
-                 <input type="email" placeholder="Enter your email address"id="modal-email">
-                  <input type="submit" value="Subscribe" id="modal-email-btn" onclick="subscribe();"/>
+          </div>
+        <script src="index.js" type="text/javascript"></script>
+        </nav>
+        <section>
+          <h1 class="article4header">A blast to the past!</h1>
+            <div class="article4mainpic">
+             <img src="images/mainarticle4.jpg"/>
+            </div>
+             <div class="maintext">
+               This year’s F1 title fight has been incredibly close so far. Eight races into the season, Max Verstappen and Lewis Hamilton have won seven grands prix between them and are separated in the standings by only a handful of points.
+               Better still, they’ve gone wheel to wheel in most of those races, with the drivers’ standings taking a dramatic turn every time the chequered flag has been waved.
+               It has all the makings of a classic rivalry, which got us thinking about the best match-ups of years gone by. Where will the 2021 edition of Hamilton vs Verstappen rank against the all-time great racing contests?
+               In no particular order, here’s a selection of the best head-to-heads of ye olde times. Which one topped the lot? You be the judge.
+             </div>
+             <div class="articlealign">
+               <div class="text">
+                <h1 class="subheader">Hunt vs Lauda</h1>
+                  A rivalry so good, they made a movie about it. Ron Howard’s Rush is one of the greatest racing films ever, but if you’d never heard of Lauda or Hunt beforehand you’d think they were sworn enemies. In reality they were good mates who got on well away from the track, even if they were prepared to push each other to the limit when the lights went out.
+                  The story of the 1976 championship is well known. Hunt made a terrible start for McLaren, retiring from four of the first six races as Lauda won four and finished second twice. Hunt was initially disqualified after winning the Spanish Grand Prix, but had his win reinstated on appeal several months later.
+                  A second victory at Paul Ricard followed before another disqualification at Brands Hatch, by which point it looked like the contest was over. But then a horrific crash at the Nurburgring almost killed Lauda, leaving him with permanent burns and badly damaged lungs.
+                  It seemed as though Hunt would have a free run at the championship, but remarkably Lauda fought his way back into his Ferrari just six weeks later. His incredible comeback took the championship to the wire, and there was one more twist at the final race as the Austrian withdrew on the second lap, believing the conditions were too treacherous to race. That left Hunt needing to finish fourth or higher, and after a frantic drive he somehow gained the positions he needed just two laps from the finish. You couldn’t make it up.
+               </div>
+               <div class="article4pics">
+                 <img src="images/HuntandLauda.jpg"/>
               </div>
             </div>
-        </div>
-      <script src="index.js" type="text/javascript"></script>
-      </nav>
-      <section>
-        <h1 class="article4header">A blast to the past!</h1>
-          <div class="article4mainpic">
-           <img src="images/mainarticle4.jpg"/>
-          </div>
-           <div class="maintext">
-             This year’s F1 title fight has been incredibly close so far. Eight races into the season, Max Verstappen and Lewis Hamilton have won seven grands prix between them and are separated in the standings by only a handful of points.
-             Better still, they’ve gone wheel to wheel in most of those races, with the drivers’ standings taking a dramatic turn every time the chequered flag has been waved.
-             It has all the makings of a classic rivalry, which got us thinking about the best match-ups of years gone by. Where will the 2021 edition of Hamilton vs Verstappen rank against the all-time great racing contests?
-             In no particular order, here’s a selection of the best head-to-heads of ye olde times. Which one topped the lot? You be the judge.
+            <div class="articlealign">
+              <div class="text">
+                 <h1 class="subheader">Hakkinen vs Schumacher</h1>
+                 Unlike a lot of the rivalries we’ve seen in the past, the one shared by Michael Schumacher and Mika Hakkinen either side of the millennium never became acrimonious. They respected each other too much to let their battles on track boil over into a war of words; a rarity when the biggest prize in motorsport is at stake.
+                 The drivers were a class apart in 1998, although it was the Finn who prevailed having been equal on points with the German with two races to go. Mid-way through the following season it looked like battle would be similarly close, only for Schumacher to break his leg at the British Grand Prix, ending his challenge.
+                 By 2000 the Schumacher-Hakkinen rivalry was back on, and even though Schumi had started the season with three wins on the bounce, a dismal run of four retirements in five races had left Hakkinen seven points clear with four races to go. Schumacher knuckled down and won all four of the remaining grands prix, deservedly sealing his third title and conquering the only opponent he ever admitted to fearing.
+              </div>
+              <div class="article4pics">
+                <img src="images/HakkinenandSchumacher.jpg"/>
+             </div>
            </div>
            <div class="articlealign">
              <div class="text">
-              <h1 class="subheader">Hunt vs Lauda</h1>
-                A rivalry so good, they made a movie about it. Ron Howard’s Rush is one of the greatest racing films ever, but if you’d never heard of Lauda or Hunt beforehand you’d think they were sworn enemies. In reality they were good mates who got on well away from the track, even if they were prepared to push each other to the limit when the lights went out.
-                The story of the 1976 championship is well known. Hunt made a terrible start for McLaren, retiring from four of the first six races as Lauda won four and finished second twice. Hunt was initially disqualified after winning the Spanish Grand Prix, but had his win reinstated on appeal several months later.
-                A second victory at Paul Ricard followed before another disqualification at Brands Hatch, by which point it looked like the contest was over. But then a horrific crash at the Nurburgring almost killed Lauda, leaving him with permanent burns and badly damaged lungs.
-                It seemed as though Hunt would have a free run at the championship, but remarkably Lauda fought his way back into his Ferrari just six weeks later. His incredible comeback took the championship to the wire, and there was one more twist at the final race as the Austrian withdrew on the second lap, believing the conditions were too treacherous to race. That left Hunt needing to finish fourth or higher, and after a frantic drive he somehow gained the positions he needed just two laps from the finish. You couldn’t make it up.
+                <h1 class="subheader">Hamilton vs Rosberg</h1>
+                Lewis Hamilton and Nico Rosberg were best friends in their junior karting days, so it looked like an ideal partnership when they were paired together at Mercedes in 2013. But things quickly turned sour a year later when the title fight became their own private battle, such was the dominance of the team’s package as F1 swapped V8s for V6 hybrids.
+                With the stakes so high, every incident between them ramped up the tension to such a degree that their relationship became toxic behind the scenes. Remember their collision in Spain that handed Max Verstappen his maiden victory? How about the time Hamilton tossed the second place cap at his vanquished teammate, only for Rosberg to lob it straight back at him? Cringe.
+                Rosberg eventually got the better of Hamilton in 2016, and sent shockwaves through the sport by announcing his retirement just days after clinching the title. We all thought that was it for the rivalry, but now they both own Extreme E teams. Let battle recommence!
              </div>
              <div class="article4pics">
-               <img src="images/HuntandLauda.jpg"/>
+               <img src="images/HamiltonandRosberg.jpg"/>
             </div>
           </div>
           <div class="articlealign">
             <div class="text">
-               <h1 class="subheader">Hakkinen vs Schumacher</h1>
-               Unlike a lot of the rivalries we’ve seen in the past, the one shared by Michael Schumacher and Mika Hakkinen either side of the millennium never became acrimonious. They respected each other too much to let their battles on track boil over into a war of words; a rarity when the biggest prize in motorsport is at stake.
-               The drivers were a class apart in 1998, although it was the Finn who prevailed having been equal on points with the German with two races to go. Mid-way through the following season it looked like battle would be similarly close, only for Schumacher to break his leg at the British Grand Prix, ending his challenge.
-               By 2000 the Schumacher-Hakkinen rivalry was back on, and even though Schumi had started the season with three wins on the bounce, a dismal run of four retirements in five races had left Hakkinen seven points clear with four races to go. Schumacher knuckled down and won all four of the remaining grands prix, deservedly sealing his third title and conquering the only opponent he ever admitted to fearing.
-            </div>
+               <h1 class="subheader">Prost vs Mansell</h1>
+               It’s not often that the arrival of a new teammate makes someone want to quit the sport. It’s even rarer that it should happen a second time. But that’s exactly what happened to Nigel Mansell as Alain Prost twice followed him to a new team in the early 1990s.
+               Joining Ferrari in 1989, Nigel Mansell had hoped that the move would help him win an elusive world championship having twice been a runner up with Williams in the 1980s. A couple of wins and a handful of podiums that year offered some encouragement, but that promise disappeared again as Prost joined the team in 1990 in place of Gerhard Berger.
+               The Frenchman instantly established himself as the number one driver, and all hope of a resurgence for Mansell disappeared when at the British Grand Prix - feeling that his car was behaving differently to normal - he discovered that his and Prost’s cars had been swapped without his knowledge. A furious Mansell vowed to retire at the end of the season, and it was only when the door opened on a return to Williams that he changed his mind.
+               After another runner-up finish in 1991, Mansell finally became world champion in 1992. But on hearing that Prost would be his teammate for the following season, the Brit again decided he’d had enough, retiring for good (with the exception of a few substitute appearances in ‘94 and ‘95) at the end of the season.
+           </div>
             <div class="article4pics">
-              <img src="images/HakkinenandSchumacher.jpg"/>
+              <img src="images/ProstandMansell.jpg"/>
            </div>
          </div>
          <div class="articlealign">
            <div class="text">
-              <h1 class="subheader">Hamilton vs Rosberg</h1>
-              Lewis Hamilton and Nico Rosberg were best friends in their junior karting days, so it looked like an ideal partnership when they were paired together at Mercedes in 2013. But things quickly turned sour a year later when the title fight became their own private battle, such was the dominance of the team’s package as F1 swapped V8s for V6 hybrids.
-              With the stakes so high, every incident between them ramped up the tension to such a degree that their relationship became toxic behind the scenes. Remember their collision in Spain that handed Max Verstappen his maiden victory? How about the time Hamilton tossed the second place cap at his vanquished teammate, only for Rosberg to lob it straight back at him? Cringe.
-              Rosberg eventually got the better of Hamilton in 2016, and sent shockwaves through the sport by announcing his retirement just days after clinching the title. We all thought that was it for the rivalry, but now they both own Extreme E teams. Let battle recommence!
-           </div>
+              <h1 class="subheader">Schumacher vs Hill</h1>
+              Like Mansell, Damon Hill endured a series of near-misses in the hunt for a world championship crown before actually succeeding. And most of the time it was Michael Schumacher blocking his path, in some cases all too literally.
+              As understudy to Prost at Williams in 1993, Hill was set to perform the same role again in 1994 as Ayrton Senna replaced the Frenchman. Tragically though, Senna was killed after crashing out of the lead at Imola, and the still inexperienced Hill was thrust into the role of team leader. He adapted admirably, and with only one point between him and Schumacher heading into the last race of the season, the winner in Australia would take the title.
+              Schumacher took the lead when the lights went out, but a mistake half-way through the race gave Hill the chance to overtake. The pair collided and although Schumacher was sent spearing off into a tyre wall, Hill was left with suspension damage that forced him out too, and his shot at glory was gone. It was deemed a racing incident by the stewards.
+              Schumacher and Hill would finish first and second in the standings again a year later, albeit with a much bigger gap between them, and it wasn’t until 1996 - Schumi’s first year with Ferrari - that Hill finally prevailed and left a certain commentator with a lump in his throat.
+          </div>
            <div class="article4pics">
-             <img src="images/HamiltonandRosberg.jpg"/>
+             <img src="images/SchumacherandHill.jpg"/>
           </div>
-        </div>
-        <div class="articlealign">
-          <div class="text">
-             <h1 class="subheader">Prost vs Mansell</h1>
-             It’s not often that the arrival of a new teammate makes someone want to quit the sport. It’s even rarer that it should happen a second time. But that’s exactly what happened to Nigel Mansell as Alain Prost twice followed him to a new team in the early 1990s.
-             Joining Ferrari in 1989, Nigel Mansell had hoped that the move would help him win an elusive world championship having twice been a runner up with Williams in the 1980s. A couple of wins and a handful of podiums that year offered some encouragement, but that promise disappeared again as Prost joined the team in 1990 in place of Gerhard Berger.
-             The Frenchman instantly established himself as the number one driver, and all hope of a resurgence for Mansell disappeared when at the British Grand Prix - feeling that his car was behaving differently to normal - he discovered that his and Prost’s cars had been swapped without his knowledge. A furious Mansell vowed to retire at the end of the season, and it was only when the door opened on a return to Williams that he changed his mind.
-             After another runner-up finish in 1991, Mansell finally became world champion in 1992. But on hearing that Prost would be his teammate for the following season, the Brit again decided he’d had enough, retiring for good (with the exception of a few substitute appearances in ‘94 and ‘95) at the end of the season.
          </div>
-          <div class="article4pics">
-            <img src="images/ProstandMansell.jpg"/>
+         <div class="articlealign">
+           <div class="text">
+              <h1 class="subheader">Hamilton vs Alonso</h1>
+              Of all the F1 rivalries, the one between Lewis Hamilton and Fernando Alonso was by far the most expensive. Hamilton arrived as a rookie at McLaren in 2007 and was joined by Alonso - then the reigning world champion - following the Spaniard’s switch from Renault. And having established himself as the best driver in the world, Alonso was under the impression that he’d be the undisputed lead driver at his new team as he chased a third world championship in a row.
+              Er, not so. The 22-year-old Hamilton was right on Alonso’s pace immediately, finishing on the podium in his first nine races to take the lead of the championship. Neither driver would yield to the other on track, which led to an ugly incident between the pair in qualifying at the Hungarian Grand Prix as Alonso blocked his teammate in the pits after Hamilton had ignored team orders.
+              This supposedly led to a huge row between Alonso and team boss Ron Dennis, in which Alonso allegedly threatened to pass potentially incriminating emails to the FIA if the team didn’t back him over Hamilton. The ‘spygate’ scandal, in which McLaren had illegally obtained technical information from Ferrari, eventually cost the team $100 million. It was also chucked out of that year's constructors’ championship. A hefty penalty indeed.
+          </div>
+           <div class="article4pics">
+             <img src="images/HamiltonandAlonso.jpg"/>
+          </div>
          </div>
-       </div>
-       <div class="articlealign">
-         <div class="text">
-            <h1 class="subheader">Schumacher vs Hill</h1>
-            Like Mansell, Damon Hill endured a series of near-misses in the hunt for a world championship crown before actually succeeding. And most of the time it was Michael Schumacher blocking his path, in some cases all too literally.
-            As understudy to Prost at Williams in 1993, Hill was set to perform the same role again in 1994 as Ayrton Senna replaced the Frenchman. Tragically though, Senna was killed after crashing out of the lead at Imola, and the still inexperienced Hill was thrust into the role of team leader. He adapted admirably, and with only one point between him and Schumacher heading into the last race of the season, the winner in Australia would take the title.
-            Schumacher took the lead when the lights went out, but a mistake half-way through the race gave Hill the chance to overtake. The pair collided and although Schumacher was sent spearing off into a tyre wall, Hill was left with suspension damage that forced him out too, and his shot at glory was gone. It was deemed a racing incident by the stewards.
-            Schumacher and Hill would finish first and second in the standings again a year later, albeit with a much bigger gap between them, and it wasn’t until 1996 - Schumi’s first year with Ferrari - that Hill finally prevailed and left a certain commentator with a lump in his throat.
-        </div>
-         <div class="article4pics">
-           <img src="images/SchumacherandHill.jpg"/>
-        </div>
-       </div>
-       <div class="articlealign">
-         <div class="text">
-            <h1 class="subheader">Hamilton vs Alonso</h1>
-            Of all the F1 rivalries, the one between Lewis Hamilton and Fernando Alonso was by far the most expensive. Hamilton arrived as a rookie at McLaren in 2007 and was joined by Alonso - then the reigning world champion - following the Spaniard’s switch from Renault. And having established himself as the best driver in the world, Alonso was under the impression that he’d be the undisputed lead driver at his new team as he chased a third world championship in a row.
-            Er, not so. The 22-year-old Hamilton was right on Alonso’s pace immediately, finishing on the podium in his first nine races to take the lead of the championship. Neither driver would yield to the other on track, which led to an ugly incident between the pair in qualifying at the Hungarian Grand Prix as Alonso blocked his teammate in the pits after Hamilton had ignored team orders.
-            This supposedly led to a huge row between Alonso and team boss Ron Dennis, in which Alonso allegedly threatened to pass potentially incriminating emails to the FIA if the team didn’t back him over Hamilton. The ‘spygate’ scandal, in which McLaren had illegally obtained technical information from Ferrari, eventually cost the team $100 million. It was also chucked out of that year's constructors’ championship. A hefty penalty indeed.
-        </div>
-         <div class="article4pics">
-           <img src="images/HamiltonandAlonso.jpg"/>
-        </div>
-       </div>
-       <div class="articlealign">
-         <div class="text">
-            <h1 class="subheader">Vettel vs Webber</h1>
-            Sebastian Vettel and Mark Webber were fierce rivals in the five seasons they raced together at Red Bull, but you wouldn’t have guessed it looking back at the record books: Vettel finished ahead of Webber in the championship in all of those years, winning 38 races in that period to the Australian’s nine.
-            In their early days together they couldn’t be separated, and in 2010 it was Webber who looked like the team’s best shot at the driver’s title with an 11-point deficit to Fernando Alonso with two races to go; Vettel a further 14 points behind. Webber felt the team was duty bound to throw its weight behind him, but the team kept Vettel in the game and the youngster turned things around in the final two grands prix to snatch the title by just four points.
-            Webber's relationship with the team never really recovered, and the final blow was dealt at the Malaysian Grand Prix in 2013 as the pair comfortably ran first and second. A team order was issued in code (the now famous ‘Multi-Map 21’ radio message) compelling the drivers to hold position, but Vettel ignored it and overtook Webber anyway, almost taking them both out of the race in the process. Webber was furious (the atmosphere on the podium was even more awkward than the photo suggests) and later that year he quit F1 for good.
-        </div>
-         <div class="article4pics">
-           <img src="images/VettelandWebber.jpg"/>
-        </div>
-       </div>
-       <div class="articlealign">
-         <div class="text">
-            <h1 class="subheader">Senna vs Prost</h1>
-            We said ‘no particular order’, but there’s no disputing that the rivalry between Ayrton Senna and Alain Prost is the greatest of all time. No other head-to-head has produced more world titles - seven in a nine-year period between 1985 and 1993 - with the duo clashing as teammates at McLaren and again as foes after the Frenchman moved to Ferrari.
-            Arguably it all began in 1984 at the Monaco Grand Prix: appalling weather meant only eight of the 20 starters finished, but in just his sixth F1 race the Brazilian rookie was flying in the uncompetitive Toleman. Quickly being caught, leader Prost waved frantically at the stewards to have the race red flagged, believing the conditions to be unsafe. The officials obliged, doing so just as Senna passed the slowing Prost as they crossed the finish line. He thought he’d won his first F1 race, but hadn’t realised the results would be taken from the previous lap. As you can imagine, he wasn’t best pleased.
-            Becoming teammates in 1988, Senna and Prost came to blows on track several times. In ‘89, the pair collided near the end of the penultimate round of the championship at Suzuka, ending Prost’s race but allowing Senna to win. The nine points for victory would have kept the title fight alive, but the Brazilian was controversially disqualified for cutting the chicane, handing the championship to Prost.
-            A year later it was Senna in the box seat heading into the penultimate race in Japan, knowing he would earn a second title if Prost failed to finish. And so he made sure that the Frenchman didn’t finish, taking him out at the first corner with a move he essentially confessed was deliberate a year later.
-            Prost’s fourth world title with Williams in 1993 would see the duo finish first and second in the drivers’ standings for a fifth and final time, with the Frenchman retiring at the end of the season. Almost immediately the animosity between them cleared and he and Senna became friends until the latter’s death at Imola in 1994.
-        </div>
-         <div class="article4pics">
-           <img src="images/SennaandProst.jpg"/>
-        </div>
-       </div>
-      </section>
-      <!--Footer-->
-      <footer>
-        <div class="footercontainer">
-          <div class="footer">
-            <div class="footerhead">
-              <h2>Contact Us</h2>
-              <a>Phone: +65 12345678</a>
-              <a>Email: enquiries@f1times.com</a>
-              <a>Social Media</a>
-            </div>
-            <div class="footer-email-form">
-              <h2>Join our newsletter</h2>
-              <input type="email" placeholder="Enter your email address"id="footer-email">
-              <input type="submit" value="Sign Up" id="footer-email-btn" onclick="newsletter();"/>
+         <div class="articlealign">
+           <div class="text">
+              <h1 class="subheader">Vettel vs Webber</h1>
+              Sebastian Vettel and Mark Webber were fierce rivals in the five seasons they raced together at Red Bull, but you wouldn’t have guessed it looking back at the record books: Vettel finished ahead of Webber in the championship in all of those years, winning 38 races in that period to the Australian’s nine.
+              In their early days together they couldn’t be separated, and in 2010 it was Webber who looked like the team’s best shot at the driver’s title with an 11-point deficit to Fernando Alonso with two races to go; Vettel a further 14 points behind. Webber felt the team was duty bound to throw its weight behind him, but the team kept Vettel in the game and the youngster turned things around in the final two grands prix to snatch the title by just four points.
+              Webber's relationship with the team never really recovered, and the final blow was dealt at the Malaysian Grand Prix in 2013 as the pair comfortably ran first and second. A team order was issued in code (the now famous ‘Multi-Map 21’ radio message) compelling the drivers to hold position, but Vettel ignored it and overtook Webber anyway, almost taking them both out of the race in the process. Webber was furious (the atmosphere on the podium was even more awkward than the photo suggests) and later that year he quit F1 for good.
+          </div>
+           <div class="article4pics">
+             <img src="images/VettelandWebber.jpg"/>
+          </div>
+         </div>
+         <div class="articlealign">
+           <div class="text">
+              <h1 class="subheader">Senna vs Prost</h1>
+              We said ‘no particular order’, but there’s no disputing that the rivalry between Ayrton Senna and Alain Prost is the greatest of all time. No other head-to-head has produced more world titles - seven in a nine-year period between 1985 and 1993 - with the duo clashing as teammates at McLaren and again as foes after the Frenchman moved to Ferrari.
+              Arguably it all began in 1984 at the Monaco Grand Prix: appalling weather meant only eight of the 20 starters finished, but in just his sixth F1 race the Brazilian rookie was flying in the uncompetitive Toleman. Quickly being caught, leader Prost waved frantically at the stewards to have the race red flagged, believing the conditions to be unsafe. The officials obliged, doing so just as Senna passed the slowing Prost as they crossed the finish line. He thought he’d won his first F1 race, but hadn’t realised the results would be taken from the previous lap. As you can imagine, he wasn’t best pleased.
+              Becoming teammates in 1988, Senna and Prost came to blows on track several times. In ‘89, the pair collided near the end of the penultimate round of the championship at Suzuka, ending Prost’s race but allowing Senna to win. The nine points for victory would have kept the title fight alive, but the Brazilian was controversially disqualified for cutting the chicane, handing the championship to Prost.
+              A year later it was Senna in the box seat heading into the penultimate race in Japan, knowing he would earn a second title if Prost failed to finish. And so he made sure that the Frenchman didn’t finish, taking him out at the first corner with a move he essentially confessed was deliberate a year later.
+              Prost’s fourth world title with Williams in 1993 would see the duo finish first and second in the drivers’ standings for a fifth and final time, with the Frenchman retiring at the end of the season. Almost immediately the animosity between them cleared and he and Senna became friends until the latter’s death at Imola in 1994.
+          </div>
+           <div class="article4pics">
+             <img src="images/SennaandProst.jpg"/>
+          </div>
+         </div>
+        </section>
+        <!--Footer-->
+        <footer>
+          <div class="footercontainer">
+            <div class="footer">
+              <div class="footerhead">
+                <h2>Contact Us</h2>
+                <a>Phone: +65 12345678</a>
+                <a>Email: enquiries@f1times.com</a>
+                <a>Social Media</a>
+              </div>
+              <div class="footer-email-form">
+                <h2>Join our newsletter</h2>
+                <input type="email" placeholder="Enter your email address"id="footer-email">
+                <input type="submit" value="Sign Up" id="footer-email-btn" onclick="newsletter();"/>
+              </div>
             </div>
           </div>
-        </div>
-      </footer>
-    </html>
+        </footer>
+      </html>
