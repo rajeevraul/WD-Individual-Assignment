@@ -1,7 +1,5 @@
 .mainbody {
-   font-family: 'Manrope';
    background-color: #212329;
-   font-family: "Manrope" ;
 }
 
 .article5mainpic {
@@ -16,9 +14,43 @@
   padding: 5px 10px 0 10px;
 }
 
+.bottomblock {
+  border-right: 2px solid #FF0000;
+  padding-right: 15px;
+  margin-right: 20px;
+}
+
 .articlealign {
   display: flex;
   justify-content: center;
+  border-top: 2px solid #FF0000;
+  border-right: 2px solid #FF0000;
+  padding: 60px 15px 30px 15px;
+  margin: 20px 20px 0px 20px;
+  border-top-right-radius: 30px;
+  z-index: -1;
+}
+
+.article5pic {
+ width: 40%;
+ border: 5px;
+}
+
+.article5pic img {
+  border-radius: 20px;
+  width: 100%;
+}
+
+.teamheader {
+ margin-bottom: -35px;
+ letter-spacing: 2.5px;
+ font-size: 25px;
+ position: relative;
+}
+
+.teamheader span {
+  background-color: #212329;
+  padding: 10px;
 }
 
 .a5text1 {
@@ -27,6 +59,7 @@
   color: 	#FFFFFF;
   margin: 10px;
   line-height: 1.6;
+  border: 5px;
 }
 
 .a5text2 {
@@ -38,15 +71,6 @@
   width: 80%;
   border: 5px;
   margin: auto;
-}
-
-.article5pic {
- width: 40%;
-}
-
-.article5pic img {
-  border-radius: 20px;
-  width: 100%;
 }
 
 #alfaromeo{
@@ -66,7 +90,7 @@
 
 #astonmartin {
   padding-left: 10%;
-  color: #00FF00;
+  color: #32CD32;
 }
 
 #ferrari {
@@ -96,5 +120,5 @@
 
 #williams {
   padding-left: 10%;
-  color: #FFFFFF;
+  color: #4169E1;
 }
