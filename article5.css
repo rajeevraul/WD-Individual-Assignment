@@ -16,8 +16,8 @@
 
 .bottomblock {
   border-right: 2px solid #FF0000;
-  padding-right: 15px;
-  margin-right: 20px;
+  padding: 15px;
+  margin: 0 20px 20px 0;
 }
 
 .articlealign {
@@ -90,7 +90,7 @@
 
 #astonmartin {
   padding-left: 10%;
-  color: #32CD32;
+  color: #007100;
 }
 
 #ferrari {

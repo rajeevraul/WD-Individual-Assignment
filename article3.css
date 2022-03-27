@@ -50,3 +50,85 @@
   width: 50%;
   padding: 5px 10px 0 10px;
 }
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 50%;
+  position: relative;
+  padding-top: 20px;
+  margin: auto;
+  border: 2px solid white;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  max-width: 100%;
+  margin: auto;
+}
+
+.mySlides img {
+  width: 100%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #000000;
+  font-weight: bold;
+  font-size: 22px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Positioning the next and previous buttons */
+.next {
+  right: 0px;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a dark translucent background color*/
+.prev:hover, .next:hover {
+  background-color: grey;
+  border-radius: 25px;
+}
+
+/* Caption text */
+.pictext {
+  color: #FFFAFA;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 8px 12px;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
