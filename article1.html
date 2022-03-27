@@ -3,45 +3,115 @@
     <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <link rel="stylesheet" href="article1.css"/>
-      <link rel="stylesheet" href="master.css"/>
+      <!--Stylesheet Import-->
+      <link rel="stylesheet" href="article1.css"/><!--Page specific stylesheet-->
+      <link rel="stylesheet" href="master.css"/><!--Standardised stylesheet page for navigation bar and footer for all pages-->
       <title>Intro To F1</title>
       <link rel="icon" type="image/x-icon" href="images/favicon.ico"/>
     </head>
   <body>
     <div class="mainbody">
+  <!-- Navigation bar adjusted for smaller screen sizes -->
+    <div id="mySidenav" class="sidenav">
+            <!--Home button -->
+            <li class="navbaritem"><a href="index.html" class="navbarlink">HOME</a></li>
+            <!--Subscribe button where a modal pops up upon clicking-->
+            <li class="navbaritem"><button class="subBtn" id="myBtnside">SUBSCRIBE</button></li>
+            <div class="dropdown">
+              <li class="navbaritem"><button class="newsBtn">NEWS &#9662;</button></li>
+              <!--Dropdown content after hovering over or clicking the news button-->
+              <div class="dropdown-content">
+                <ul>
+                  <li><a href="article1.html">INTRODUCTION TO F1</a></li>
+                  <li><a href="article2.html">VERSTAPPEN WINS THE CHAMPIONSHIP</a></li>
+                  <li><a href="article3.html">2021 SEASON REVIEW</a></li>
+                  <li><a href="article4.html">BLAST TO THE PAST</a></li>
+                  <li><a href="article5.html">2022 CAR REVEALS</a></li>
+                </ul>
+              </div>
+            </div>
+    </div>
+    <!-- Navigation bar adjusted for larger screen sizes -->
     <nav class="navbar">
       <div class="navbarcontainer">
-          <a href="index.html" class="logolink"><img src="images/navbarlogo.png" class="navbarlogo"></img></a>
+          <a href="index.html" class="logolink"><img src="images/navbarlogo.png" class="navbarlogo"/></a>
           <ul class="navbarmenu">
             <li class="navbaritem"><a href="index.html" class="navbarlink">HOME</a></li>
             <li class="navbaritem"><button class="subBtn" id="myBtn">SUBSCRIBE</button></li>
             <div class="dropdown">
-            	<li class="navbaritem"><button class="newsBtn">NEWS</button></li>
-            	<div class="dropdown-content">
-            		<ul>
-            			<li><a href="article1.html">Introduction to F1</a></li>
-            			<li><a href="article2.html">VERSTAPPEN WINS THE CHAMPIONSHIP</a></li>
-            			<li><a href="article3.html">2021 SEASON REVIEW</a></li>
-            			<li><a href="article4.html">BLAST TO THE PAST</a></li>
-            			<li><a href="article5.html">2022 SEASON PREPARATIONS</a></li>
-            		</ul>
-            	</div>
+              <li class="navbaritem"><button class="newsBtn">NEWS</button></li>
+              <div class="dropdown-content">
+                <ul>
+                  <li><a href="article1.html">INTRODUCTION TO F1</a></li>
+                  <li><a href="article2.html">VERSTAPPEN WINS THE CHAMPIONSHIP</a></li>
+                  <li><a href="article3.html">2021 SEASON REVIEW</a></li>
+                  <li><a href="article4.html">BLAST TO THE PAST</a></li>
+                  <li><a href="article5.html">2022 CAR REVEALS</a></li>
+                </ul>
+              </div>
             </div>
           </ul>
+          <!-- The three line menu button (hamburger) -->
+          <div class="icon">
+              <div class="container" onclick="toggle(this); openNav();">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+          </div>
           <div id="myModal" class="modal">
             <!-- Modal content -->
             <div class="modal-content">
               <span class="close">&times;</span>
-              <img src="images/navbarlogo.png"/>
-              <h1 class="subscribedialogue">Subscribe now for exclusive behind the scenes content and stand a chance to win tickets!
-                <h2>$2.99 per month</h2>
-                <input id="promocode" onChange="promocode();" type="text" placeholder="Apply promo code here" name="promocode" list="promolist">
-              </h1>
+              <div class="modallogo">
+                <img src="images/navbarlogo.png"/>
+              </div>
+              <div class="subscribedialogue">
+                <h1>Subscribe NOW for <span class="highlightme">exclusive</span> behind the scenes content and stand a chance to win <span class="highlightme2">tickets</span> to the <u>upcoming F1 race!</u></h1>
+                <p>(Further details to be sent to your inbox...)</p>
+              </div>
+              <!-- Modal content -->
+              <div class="subscribeplan">
+                <h3>CHOOSE A PLAN:</h3><br/>
+                  <div class="choose">
+                    <span>
+                      <label for="monthly">$3<span><br/>monthly payments</span>
+                      <div class="align"><input type="radio" id="monthly" name="plan" value="3" onclick="totalcost();"/></div>
+                    </label>
+                    </span>
+                    <span>
+                      <label for="yearly">$10<span><br/>yearly payments</span>
+                      <div class="align"><input type="radio" id="yearly" name="plan" value="10" onclick="totalcost();"/></div>
+                    </label>
+                    </span>
+                  </div>
+              </div>
+              <!--Promo code initialisation in modal-->
+              <div class="promo">
+                <label for="promocode">Apply a Promo Code here (if valid):</label>
+                 <input id="promocode" onChange="totalcost();" type="text" placeholder="Apply promo code here" name="promocode" list="promolist">
+                   <datalist id="promolist">
+                      <option value="NEWUSER" id="NEWUSER"></option>
+                   </datalist>
+              </div>
+              <br/>
+              <div class="cost">
+                Your Initial Payment Amount:
+                <input type="number" id="totalcost" step="0.01" readonly/>
+              </div>
+                 <br>
+              <div class="signup">
+                <strong>Interested? Sign Up with your email address here!<br/><br/></strong>
+                <input type="email" placeholder="Enter your email address" id="modal-email">
+                <input type="submit" value="Subscribe" id="modal-email-btn" onclick="subscribe();"/>
+              </div>
             </div>
           </div>
-      </div>
+        </div>
+      <!--Javascript import-->
+      <script src="index.js" type="text/javascript"></script>
     </nav>
+        <!--Main Body-->
        <h1 class="article1header">Introduction To Formula 1</h1>
          <div class="article1mainpic">
           <img src="images/mainarticle1.jpg"/>
@@ -65,9 +135,9 @@
         The word ‘One’ comes from the grading FIA issues to the racing tracks, the approved cars and the drivers’ licences. The ‘One’ is also to distinguish F1 from street car racing and also to indicate that it is the ultimate in formula racing.
         Formula One is governed by the Federation Internationale de l’Automobile (FIA) owned by the Formula One Group. The FIA, established on 20 June 1904, is a non-profit organisation and represents the interest of motoring organisations and motor car users.
         The organisation amends, alters and introduces rules to Formula One so as to ensure the safety of the participants in the races, promote fair play, and to ensure that the followers and spectators of Formula One get a good deal.
-
         Formula One is all about cars and every fan would like to know more about them. They are indeed a fascinating piece of machinery and a lot of effort goes into their construction. That is precisely why the Constructor’s Championship is awarded at the end of every racing season.
-        Cars have evolved drastically over almost <a div class="link" href="https://www.youtube.com/watch?v=WTmX420cb7A">seventy years of Formula One.</a>
+        Cars have evolved drastically over almost
+        <a div class="link" href="https://www.youtube.com/watch?v=WTmX420cb7A">seventy years of Formula One.</a>
         Today’s cars are much safer and more manoeuvrable. The dynamics have improved and electronics has crept in substantially over the years. Because of that, drivers have better control over the cars resulting in better speeds and fewer accidents. However, F1 cars still have open wheels and open cockpit and are single-seated.
 
         Formula One cars are aerodynamically designed to provide the least resistance as they cut through the air. The feature not only helps them attain great speeds but also to consume less fuel as well as to get a better grip on the tarmac.
@@ -105,39 +175,39 @@
                <div class="text">Alfa Romeo Racing: Valtteri Bottas and Guanyu Zho</div>
       		</div>
       		<div class="mySlides fade">
-        		<img src="images/alphatauridrivers.png"/>
+        		<img src="images/alphatauridrivers.jpg"/>
              <div class="text">AlphaTauri: Yuki Tsunoda and Pierre Gasly</div>
       		</div>
       		<div class="mySlides fade">
-        		<img src="images/alpinedrivers.png"/>
+        		<img src="images/alpinedrivers.jpg"/>
              <div class="text">Alpine F1 Team: Esteban Ocon and Fernando Alonso</div>
       		</div>
       		<div class="mySlides fade">
-        		<img src="images/astonmartindrivers.png"/>
+        		<img src="images/astonmartindrivers.jpg"/>
              <div class="text">Aston Martin: Sebastian Vettel and Lance Stroll</div>
       		</div>
           <div class="mySlides fade">
-            <img src="images/ferraridrivers.png"/>
+            <img src="images/ferraridrivers.jpg"/>
              <div class="text">Ferrari: Charles Leclerc and Carlos Sainz</div>
           </div>
           <div class="mySlides fade">
-            <img src="images/haasdrivers.png"/>
+            <img src="images/haasdrivers.jpg"/>
              <div class="text"> Haas F1 Team: Kevin Magnussen and Mick Schumacher</div>
           </div>
           <div class="mySlides fade">
-            <img src="images/mclarendrivers.png"/>
+            <img src="images/mclarendrivers.jpg"/>
              <div class="text">McLaren: Lando Norris and Daniel Ricciardo</div>
           </div>
           <div class="mySlides fade">
-            <img src="images/mercedesdrivers.png"/>
+            <img src="images/mercedesdrivers.jpg"/>
              <div class="text">Mercedes: Lewis Hamilton and George Russell</div>
           </div>
           <div class="mySlides fade">
-            <img src="images/redbulldrivers.png"/>
+            <img src="images/redbulldrivers.jpg"/>
              <div class="text">Red Bull Racing: Max Verstappen and Sergio Perez</div>
           </div>
           <div class="mySlides fade">
-            <img src="images/williamsdrivers.png"/>
+            <img src="images/williamsdrivers.jpg"/>
              <div class="text">Williams: Alexander Albon and Nicholas Latifi</div>
           </div>
       <!-- Next and previous buttons -->

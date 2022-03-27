@@ -12,6 +12,7 @@
     src: url(Fonts/Manrope-Regular.ttf);
   } */
 
+/*Navigation bar container styling*/
 .navbar{
   background-color: #212329;
   height: 80px;
@@ -33,8 +34,8 @@
 /*Website logo styling*/
 .logolink {
   display: block;
-  width: 100%
-  left: 10;
+  width: 100%;
+  left: 10px;
 }
 
 .navbarlogo{
@@ -42,6 +43,7 @@
   height: 100%;
 }
 
+/* Contents displaying in navigation bar styling */
 .navbarmenu{
   align-items: center;
   padding-top: 64px;
@@ -63,6 +65,7 @@
   letter-spacing: 2.5px;
 }
 
+/* Hover effects of items in navigation bar */
 .navbaritem :hover{
   cursor: pointer;
   color: #000000;
@@ -83,6 +86,7 @@
   letter-spacing: 2.5px;
 }
 
+/* Subscribe button hoover effects */
 .subBtn :hover {
   cursor: pointer;
   color: #000000;
@@ -90,6 +94,7 @@
 }
 
 /* Modal pops up upon clicking the subscribe button */
+/* Code obtained from W3 schools. Source: https://www.w3schools.com/howto/howto_css_modals.asp */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -103,7 +108,7 @@
   background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
 }
 
-/* Modal Content/Box */
+/* Modal content box */
 .modal-content {
   background-color: rgb(255,255,255, 0.9);
   margin: 10% auto; /* 15% from the top and centered */
@@ -111,26 +116,6 @@
   border: 1px solid #888;
   width: 60%;  /* Could be more or less, depending on screen size */
   border-radius: 30px;
-}
-
-.highlightme {
-  position: relative;
-}
-
-.highlightme:after {
-  background-color: rgba(249,66,61,0.6);
-  content: " ";
-  height: 30%;
-  position: absolute;
-  left: 0;
-  margin-left: -0.5rem;
-  top: 65%;
-  width: calc(100% + 1rem);
-  z-index: -1;
-}
-
-.highlightme2 {
-  position: relative;
 }
 
 .highlightme2:after {
@@ -159,21 +144,45 @@
   cursor: pointer;
 }
 
+/* Modal content box */
+.highlightme {
+  position: relative;
+}
+
+.highlightme:after {
+  background-color: rgba(249,66,61,0.6);
+  content: " ";
+  height: 30%;
+  position: absolute;
+  left: 0;
+  margin-left: -0.5rem;
+  top: 65%;
+  width: calc(100% + 1rem);
+  z-index: -1;
+}
+
+.highlightme2 {
+  position: relative;
+}
+
 /*Styling of elements inside modal */
 .modallogo {
   display: flex;
   justify-content: center;
 }
 
+ /* Logo styling */
 .modal-content img{
   width: 50%;
 }
 
+/* Text container styling */
 .subscribedialogue {
   z-index: 10;
   position: relative;
 }
 
+/* Text styling */
 .subscribedialogue h1{
   font-size: 25px;
   padding: 10px;
@@ -184,6 +193,7 @@
   margin: auto;
 }
 
+/* Text styling */
 .subscribedialogue p {
   font-size: 20px;
   padding: 10px;
@@ -194,6 +204,7 @@
   margin: auto;
 }
 
+/* "Choose a plan" container styling */
 .subscribeplan {
   padding: 10px;
   width: 80%;
@@ -203,38 +214,12 @@
   border-radius: 25px;
 }
 
+/* "Choose a plan" box header styling*/
 .subscribeplan h3{
   display: block;
   text-align: left;
   font-size: 20px;
   letter-spacing: 1.2px;
-}
-
-.promo {
- width: 100%;
- text-align: right;
-}
-
-.promo label {
-  font-size: 15px;
-}
-
-.promo input {
-  padding: 10px;
-}
-
-.cost {
-  width: 100%;
-  text-align : right;
-  font-size: 18px;
-}
-
-.cost input {
-  padding: 10px;
-  font-size: 18px;
-  background: none;
-  width: 10%;
-  border: none;
 }
 
 .choose {
@@ -307,11 +292,42 @@
   outline-offset: max(2px, 0.15em);
 }
 
+.promo {
+ width: 100%;
+ text-align: right;
+}
+
+/* Promo code input area styling */
+.promo label {
+  font-size: 15px;
+}
+
+.promo input {
+  padding: 10px;
+}
+
+/* Payment amount text styling */
+.cost {
+  width: 100%;
+  text-align : right;
+  font-size: 18px;
+}
+
+/* Total cost display styling*/
+.cost input {
+  padding: 10px;
+  font-size: 18px;
+  background: none;
+  width: 40%;
+  border: none;
+}
+
 .signup {
   text-align: center;
   font-size: 20px;
 }
 
+/* Modal email styling */
 #modal-email{
   width: 50%;
   height: 40px;
@@ -322,10 +338,12 @@
   justify-content: center;
 }
 
+/* Email placholder styling */
 #modal-email::placeholder{
   color: #b1b1b1;
 }
 
+/* Email button styling */
 #modal-email-btn{
   width: 100px;
   height: 40px;
@@ -337,6 +355,7 @@
   font-size: 16px;
 }
 
+/* Email button hover effects */
 #modal-email-btn:hover{
   cursor: pointer;
   background-color: #337AF1;
@@ -357,11 +376,13 @@
   letter-spacing: 2.5px;
 }
 
+/* Dropdown list styling */
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
+/* Contents inside dropdown list styling */
 .dropdown-content {
   background-color: #212329;
   display: none;
@@ -381,6 +402,7 @@
   margin: 5px;
 }
 
+/* Text styling in dropdown list */
 .dropdown-content a {
   padding: 5px;
   text-decoration: none;
@@ -388,6 +410,7 @@
   text-align: center;
 }
 
+/* Hover effects of items in dropdown list */
 .dropdown-content a:hover {
   cursor: pointer;
   color: #000000;
@@ -403,7 +426,7 @@
   transition: all 0.5s ease-out;
 }
 
-/*footer*/
+/* Footer */
 *{
   padding: 0;
   margin: 0;
@@ -411,6 +434,7 @@
   font-family: Arial;
 }
 
+/* Footer container styling */
 .footercontainer{
   background-color: #212329;
   padding: 64px 0 64px 0;
@@ -427,16 +451,19 @@
   margin: 0 auto;
 }
 
+/* Footer content container styling */
 .footerhead{
   display: flex;
   flex-direction: column;
   margin-right: 64px;
 }
 
+/* Footer header styling */
 .footerhead h2{
   margin-bottom: 32px;
 }
 
+/* Text content styling */
 .footerhead a{
   color: #fff;
   text-decoration: none;
@@ -444,6 +471,7 @@
   cursor: pointer;
 }
 
+/* Footer content hover effects */
 .footerhead a:hover{
   color: red;
   transition: 0.5s ease-out;
@@ -453,6 +481,7 @@
   margin-bottom: 32px;
 }
 
+/* Footer email box styling */
 #footer-email{
   width: 250px;
   height: 40px;
@@ -464,10 +493,12 @@
   margin-bottom: 16px;
 }
 
+/* Footer email box content styling */
 #footer-email::placeholder{
   color: #b1b1b1;
 }
 
+/* Footer email sign up button styling */
 #footer-email-btn{
   width: 100px;
   height: 40px;
@@ -479,13 +510,17 @@
   font-size: 16px;
 }
 
+/* Hover effecrs of footer email sign up button styling */
 #footer-email-btn:hover{
   cursor: pointer;
   background-color: #337AF1;
   transition: all 0.4s ease-out;
 }
 
-@media (max-width: 4000px) and (min-width: 1001px) {
+/* Viewport for screen width size 1001 pixels to 1920 pixels */
+@media (max-width: 1920px) and (min-width: 1001px) {
+
+  /* Between this range of display sizes, the three line menu button (hamburger) is hidden */
   .sidenav{
     display: none;
   }
@@ -500,6 +535,7 @@
 
 }
 
+/* Viewport for screen width size 768 pixels to 1000 pixels */
 @media (max-width: 1000px) and (min-width: 768px) {
   .navbarmenu {
     display: none !important;
@@ -510,6 +546,7 @@
   cursor: pointer;
 }
 
+/* The three line menu button (hamburger) is displayed on the top right*/
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
@@ -518,15 +555,17 @@
   transition: 0.4s;
 }
 
+/* Transition of first line of three line menu button (hamburger) to an 'X' shape */
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-1px, 13px);
   transform: rotate(-45deg) translate(-1px, 13px);
   width: 20px;
   height: 4px;
 }
-
+/* Transition of second line of three line menu button (hamburger) to fade away */
 .change .bar2 {opacity: 0;}
 
+/* Transition of third line of three line menu button (hamburger) to an 'X' shape */
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-2px, -14px);
   transform: rotate(45deg) translate(-2px, -14px);
@@ -534,8 +573,9 @@
   height: 4px;
 }
 
-  .sidenav {
-    background-color: #212329;
+/* Navigation bar (appearing on the right) styling*/
+.sidenav {
+  background-color: #212329;
   height: 100%;
   width: 0;
   position: fixed;
@@ -548,15 +588,18 @@
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
+/* Text styling */
 .sidenav a {
   display: block;
   transition: 0.3s;
 }
 
+/* Text hover effects */
 .sidenav a:hover {
   color: #f1f1f1;
 }
 
+/* Styling positioning of elemnts in side navigation bar */
 .sidenav .closebtn {
   position: absolute;
   top: 0;
@@ -587,6 +630,7 @@
 
 }
 
+/* Viewport for screen width size 576 pixels to 768 pixels */
 @media (max-width: 768px) and (min-width: 576px) {
 .navbarmenu {
     display: none !important;
@@ -597,6 +641,7 @@
   cursor: pointer;
 }
 
+/* The three line menu button (hamburger) is displayed on the top right*/
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
@@ -605,6 +650,7 @@
   transition: 0.4s;
 }
 
+/* Transition of first line of three line menu button (hamburger) to complete an 'X' shape */
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-1px, 13px);
   transform: rotate(-45deg) translate(-1px, 13px);
@@ -612,8 +658,10 @@
   height: 4px;
 }
 
+/* Transition of second line of three line menu button (hamburger) to fade away */
 .change .bar2 {opacity: 0;}
 
+/* Transition of third line of three line menu button (hamburger) to complete an 'X' shape */
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-2px, -14px);
   transform: rotate(45deg) translate(-2px, -14px);
@@ -621,8 +669,9 @@
   height: 4px;
 }
 
-  .sidenav {
-    background-color: #212329;
+/* Navigation bar (appearing on the right) styling*/
+.sidenav {
+  background-color: #212329;
   height: 100%;
   width: 0;
   position: fixed;
@@ -635,15 +684,18 @@
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
+/* Text styling */
 .sidenav a {
   display: block;
   transition: 0.3s;
 }
 
+/* Text hover effects */
 .sidenav a:hover {
   color: #f1f1f1;
 }
 
+/* Styling positioning of elemnts in side navigation bar */
 .sidenav .closebtn {
   position: absolute;
   top: 0;
@@ -672,18 +724,14 @@
   background-color: black;
 }
 
-
 }
 
+/* Viewport for screen width size 320 pixels to 576 pixels */
 @media (max-width: 576px) and (min-width: 320px) {
 
   .modal-content {
     width: 80% !important;
   }
-
-  .cost input {
-    width: 20%;
-}
 
   .navbarmenu {
     display: none !important;
@@ -694,6 +742,7 @@
   cursor: pointer;
 }
 
+/* The three line menu button (hamburger) is displayed on the top right*/
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
@@ -702,6 +751,7 @@
   transition: 0.4s;
 }
 
+/* Transition of first line of three line menu button (hamburger) to complete an 'X' shape */
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-1px, 13px);
   transform: rotate(-45deg) translate(-1px, 13px);
@@ -709,8 +759,10 @@
   height: 4px;
 }
 
+/* Transition of second line of three line menu button (hamburger) to fade away */
 .change .bar2 {opacity: 0;}
 
+/* Transition of third line of three line menu button (hamburger) to complete an 'X' shape */
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-2px, -14px);
   transform: rotate(45deg) translate(-2px, -14px);
@@ -718,6 +770,7 @@
   height: 4px;
 }
 
+/* Navigation bar (appearing on the right) styling*/
   .sidenav {
   background-color: #212329;
   height: 100%;
@@ -732,15 +785,18 @@
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
+/* Text styling */
 .sidenav a {
   display: block;
   transition: 0.3s;
 }
 
+/* Text hover effects */
 .sidenav a:hover {
   color: #f1f1f1;
 }
 
+/* Styling positioning of elemnts in side navigation bar */
 .sidenav .closebtn {
   position: absolute;
   top: 0;

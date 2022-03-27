@@ -1,17 +1,16 @@
 /* Body */
+/* Standardised background colour throughout the page */
 .mainbody {
  background-color: #212329;
 }
 
+/* Page header styling */
 .article1header {
   text-align: center;
   color: #FFFAFA;
 }
 
-.articles:hover {
-  cursor: pointer;
-}
-
+/* Main article image styling */
 .article1mainpic {
   display: flex;
   justify-content: center;

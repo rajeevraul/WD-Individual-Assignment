@@ -1,4 +1,6 @@
-/*Navbar */
+//Navigation bar
+
+//Whether the navigation bar buttons are displayed at the top of the screen or displays three line menu (hamburger) button instead
 function openNav() {
               if (document.getElementById("mySidenav").style.width == "50%"){
                 document.getElementById("mySidenav").style.width = "0";
@@ -12,8 +14,8 @@ function toggle(x) {
               x.classList.toggle("change");
   }
 
-  /*Modal*/
-// Get the modal
+//Modal source from w3 schools. source: https://www.w3schools.com/howto/howto_css_modals.asp
+// Get the modal upon clicking on subscribe
 var modal = document.getElementById("myModal");
 // Get the button that opens the modal
 var btn1 = document.getElementById("myBtn");
@@ -40,7 +42,7 @@ window.onclick = function(event) {
   }
 }
 
-/*Subscribing alert*/
+//Subscribing alert upon clicking on "Subscribe" in Modal
 function subscribe() {
   if (document.getElementById("modal-email").value == "") {
     alert("Please input a valid email address");
@@ -49,7 +51,7 @@ function subscribe() {
   }
 }
 
-/*Promo code interaction*/
+//Promo code interaction
 function totalcost()
 {
 const radioButtons = document.querySelectorAll('input[name="plan"]');
@@ -67,12 +69,12 @@ for (const radioButton of radioButtons) {
         document.getElementById("totalcost").value = total;
 }
 
-/*URL Locator*/
+//URL Locator upon clicking on the images on the Index page
 function imageClick(url) {
     window.location = url;
 }
 
-/*Pop up alert*/
+//Pop up alert upon pressing on "Sign Up" in footer
 function newsletter() {
   if (document.getElementById("footer-email").value == "") {
     alert("Please input a valid email address");
@@ -81,11 +83,13 @@ function newsletter() {
   }
 }
 
-/*Countdown Timer*/
-  // Set the date we're counting down to
-  var countDownDate = new Date("Mar 28, 2022 01:00:00").getTime();
-  // Update the count down every 1 second
-  var x = setInterval(function() {
+//Countdown Timer in Article 1
+// from w3 schools. Source: https://www.w3schools.com/howto/howto_js_countdown.asp
+// Set the date we're counting down to
+var countDownDate = new Date("Apr 10, 2022 13:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
   // Get today's date and time
   var now = new Date().getTime();
   // Find the distance between now and the count down date
@@ -95,17 +99,18 @@ function newsletter() {
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  // Display the result in the element with id="demo"
+  // Output the result in an element with id="demo"
   document.getElementById("demo").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
-  // If the count down is finished, write some text
+  // If the count down is over, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "IT'S RACE TIME!";
+    document.getElementById("demo").innerHTML = "EXPIRED";
   }
 }, 1000);
 
-//Slideshow
+
+//Slideshow in article 1 and article 3
 var slideIndex = 1;
 showSlides(slideIndex);
 

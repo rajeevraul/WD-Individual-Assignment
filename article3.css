@@ -60,7 +60,7 @@
   position: relative;
   padding-top: 20px;
   margin: auto;
-  border: 2px solid white;
+  border: 2px;
 }
 
 /* Hide the images by default */
@@ -82,7 +82,7 @@
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: #000000;
+  color: #FFFFFF;
   font-weight: bold;
   font-size: 22px;
   transition: 0.6s ease;

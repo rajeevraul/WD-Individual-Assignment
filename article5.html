@@ -8,40 +8,107 @@
       <title>2022 Season Overview</title>
       <link rel="icon" type="image/x-icon" href="images/favicon.ico"/>
     </head>
-      <div class="mainbody">
-        <nav class="navbar">
-          <div class="navbarcontainer">
-              <a href="index.html" class="logolink"><img src="images/navbarlogo.png" class="navbarlogo"></img></a>
-              <ul class="navbarmenu">
-                <li class="navbaritem"><a href="index.html" class="navbarlink">HOME</a></li>
-                <li class="navbaritem"><button class="subBtn" id="myBtn">SUBSCRIBE</button></li>
-                <div class="dropdown">
-                  <li class="navbaritem"><button class="newsBtn">NEWS</button></li>
-                  <div class="dropdown-content">
-                    <ul>
-                      <li><a href="article1.html">Introduction to F1</a></li>
-                      <li><a href="article2.html">VERSTAPPEN WINS THE CHAMPIONSHIP</a></li>
-                      <li><a href="article3.html">2021 SEASON REVIEW</a></li>
-                      <li><a href="article4.html">BLAST TO THE PAST</a></li>
-                      <li><a href="article5.html">2022 SEASON PREPARATIONS</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </ul>
-              <div id="myModal" class="modal">
-                <!-- Modal content -->
-                <div class="modal-content">
-                  <span class="close">&times;</span>
-                  <img src="images/navbarlogo.png"/>
-                  <h1 class="subscribedialogue">Subscribe now for exclusive behind the scenes content and stand a chance to win tickets!
-                    <h2>$2.99 per month</h2>
-                    <input id="promocode" onChange="promocode();" type="text" placeholder="Apply promo code here" name="promocode" list="promolist">
-                  </h1>
-                </div>
+    <div class="mainbody">
+  <!-- Navigation bar adjusted for smaller screen sizes -->
+    <div id="mySidenav" class="sidenav">
+            <!--Home button -->
+            <li class="navbaritem"><a href="index.html" class="navbarlink">HOME</a></li>
+            <!--Subscribe button where a modal pops up upon clicking-->
+            <li class="navbaritem"><button class="subBtn" id="myBtnside">SUBSCRIBE</button></li>
+            <div class="dropdown">
+              <li class="navbaritem"><button class="newsBtn">NEWS &#9662;</button></li>
+              <!--Dropdown content after hovering over or clicking the news button-->
+              <div class="dropdown-content">
+                <ul>
+                  <li><a href="article1.html">INTRODUCTION TO F1</a></li>
+                  <li><a href="article2.html">VERSTAPPEN WINS THE CHAMPIONSHIP</a></li>
+                  <li><a href="article3.html">2021 SEASON REVIEW</a></li>
+                  <li><a href="article4.html">BLAST TO THE PAST</a></li>
+                  <li><a href="article5.html">2022 CAR REVEALS</a></li>
+                </ul>
+              </div>
+            </div>
+    </div>
+    <!-- Navigation bar adjusted for larger screen sizes -->
+    <nav class="navbar">
+      <div class="navbarcontainer">
+          <a href="index.html" class="logolink"><img src="images/navbarlogo.png" class="navbarlogo"/></a>
+          <ul class="navbarmenu">
+            <li class="navbaritem"><a href="index.html" class="navbarlink">HOME</a></li>
+            <li class="navbaritem"><button class="subBtn" id="myBtn">SUBSCRIBE</button></li>
+            <div class="dropdown">
+              <li class="navbaritem"><button class="newsBtn">NEWS</button></li>
+              <div class="dropdown-content">
+                <ul>
+                  <li><a href="article1.html">INTRODUCTION TO F1</a></li>
+                  <li><a href="article2.html">VERSTAPPEN WINS THE CHAMPIONSHIP</a></li>
+                  <li><a href="article3.html">2021 SEASON REVIEW</a></li>
+                  <li><a href="article4.html">BLAST TO THE PAST</a></li>
+                  <li><a href="article5.html">2022 CAR REVEALS</a></li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+          <!-- The three line menu button (hamburger) -->
+          <div class="icon">
+              <div class="container" onclick="toggle(this); openNav();">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
               </div>
           </div>
-          <script src="index.js" type="text/javascript"></script>
-        </nav>
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="modallogo">
+                <img src="images/navbarlogo.png"/>
+              </div>
+              <div class="subscribedialogue">
+                <h1>Subscribe NOW for <span class="highlightme">exclusive</span> behind the scenes content and stand a chance to win <span class="highlightme2">tickets</span> to the <u>upcoming F1 race!</u></h1>
+                <p>(Further details to be sent to your inbox...)</p>
+              </div>
+              <!-- Modal content -->
+              <div class="subscribeplan">
+                <h3>CHOOSE A PLAN:</h3><br/>
+                  <div class="choose">
+                    <span>
+                      <label for="monthly">$3<span><br/>monthly payments</span>
+                      <div class="align"><input type="radio" id="monthly" name="plan" value="3" onclick="totalcost();"/></div>
+                    </label>
+                    </span>
+                    <span>
+                      <label for="yearly">$10<span><br/>yearly payments</span>
+                      <div class="align"><input type="radio" id="yearly" name="plan" value="10" onclick="totalcost();"/></div>
+                    </label>
+                    </span>
+                  </div>
+              </div>
+              <!--Promo code initialisation in modal-->
+              <div class="promo">
+                <label for="promocode">Apply a Promo Code here (if valid):</label>
+                 <input id="promocode" onChange="totalcost();" type="text" placeholder="Apply promo code here" name="promocode" list="promolist">
+                   <datalist id="promolist">
+                      <option value="NEWUSER" id="NEWUSER"></option>
+                   </datalist>
+              </div>
+              <br/>
+              <div class="cost">
+                Your Initial Payment Amount:
+                <input type="number" id="totalcost" step="0.01" readonly/>
+              </div>
+                 <br>
+              <div class="signup">
+                <strong>Interested? Sign Up with your email address here!<br/><br/></strong>
+                <input type="email" placeholder="Enter your email address" id="modal-email">
+                <input type="submit" value="Subscribe" id="modal-email-btn" onclick="subscribe();"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!--Javascript import-->
+      <script src="index.js" type="text/javascript"></script>
+    </nav>
     <body>
       <div class="article5mainpic">
        <img src="images/mainarticle5.jpg"/>
@@ -224,7 +291,7 @@
                               "I think it's got speed and elegance to it that we thought would go on top of the fast race car that hopefully we've designed this year."
                          </div>
                            <div class="article5pic">
-                             <img src="images/mclaren1.png"/>
+                             <img src="images/mclaren1.jpg"/>
                           </div>
                          </div>
                          <div class="bottomblock">
