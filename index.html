@@ -6,11 +6,27 @@
       <link rel="stylesheet" href="index.css"/>
       <link rel="stylesheet" href="master.css"/>
       <title>Home</title>
-      <link rel="icon" type="image/x-icon" href="images/favicon.ico"/>
+      <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     </head>
   <body>
     <div class="mainbody">
   <!-- Navigation bar -->
+    <div id="mySidenav" class="sidenav">
+            <li class="navbaritem"><a href="index.html" class="navbarlink">HOME</a></li>
+            <li class="navbaritem"><button class="subBtn" id="myBtnside">SUBSCRIBE</button></li>
+            <div class="dropdown">
+              <li class="navbaritem"><button class="newsBtn">NEWS &#9662</button></li>
+              <div class="dropdown-content">
+                <ul>
+                  <li><a href="article1.html">Introduction to F1</a></li>
+                  <li><a href="article2.html">VERSTAPPEN WINS THE CHAMPIONSHIP</a></li>
+                  <li><a href="article3.html">2021 SEASON REVIEW</a></li>
+                  <li><a href="article4.html">BLAST TO THE PAST</a></li>
+                  <li><a href="article5.html">2022 SEASON PREPARATIONS</a></li>
+                </ul>
+              </div>
+            </div>
+    </div>
     <nav class="navbar">
       <div class="navbarcontainer">
           <a href="index.html" class="logolink"><img src="images/navbarlogo.png" class="navbarlogo"></img></a>
@@ -18,18 +34,25 @@
             <li class="navbaritem"><a href="index.html" class="navbarlink">HOME</a></li>
             <li class="navbaritem"><button class="subBtn" id="myBtn">SUBSCRIBE</button></li>
             <div class="dropdown">
-            	<li class="navbaritem"><button class="newsBtn">NEWS</button></li>
-            	<div class="dropdown-content">
-            		<ul>
-            			<li><a href="article1.html">Introduction to F1</a></li>
-            			<li><a href="article2.html">VERSTAPPEN WINS THE CHAMPIONSHIP</a></li>
-            			<li><a href="article3.html">2021 SEASON REVIEW</a></li>
-            			<li><a href="article4.html">BLAST TO THE PAST</a></li>
-            			<li><a href="article5.html">2022 SEASON PREPARATIONS</a></li>
-            		</ul>
-            	</div>
+              <li class="navbaritem"><button class="newsBtn">NEWS</button></li>
+              <div class="dropdown-content">
+                <ul>
+                  <li><a href="article1.html">INTRODUCTION TO F1</a></li>
+                  <li><a href="article2.html">VERSTAPPEN WINS THE CHAMPIONSHIP</a></li>
+                  <li><a href="article3.html">2021 SEASON REVIEW</a></li>
+                  <li><a href="article4.html">BLAST TO THE PAST</a></li>
+                  <li><a href="article5.html">2022 SEASON PREPARATIONS</a></li>
+                </ul>
+              </div>
             </div>
           </ul>
+          <div class="icon">
+              <div class="container" onclick="toggle(this); openNav();">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+          </div>
           <div id="myModal" class="modal">
             <!-- Modal content -->
             <div class="modal-content">
@@ -38,34 +61,42 @@
                 <img src="images/navbarlogo.png"/>
               </div>
               <div class="subscribedialogue">
-                <h1>Subscribe now for exclusive behind the scenes content and stand a chance to win tickets!</h1>
+                <h1>Subscribe NOW for <span class="highlightme">exclusive</span> behind the scenes content and stand a chance to win <span class="highlightme2">tickets</span> to the <u>upcoming F1 race!</u></h1>
+                <p>(Further details to be sent to your Inbox...)</p>
               </div>
               <div class="subscribeplan">
-                <h3>Choose a plan:</h3>
+                <h3>CHOOSE A PLAN:</h3><br/>
                   <div class="choose">
                     <span>
-                      <label for="monthly">$3 per month</label>
-                      <input type="radio" id="monthly" name="plan" value="3" onclick="totalcost();"/>
+                      <label for="monthly">$3<span><br/>monthly payments</span>
+                      <div class="align"><input type="radio" id="monthly" name="plan" value="3" onclick="totalcost();"/></div>
+                    </label>
                     </span>
                     <span>
-                      <label for="yearly">$10 per year</label>
-                      <input type="radio" id="yearly" name="plan" value="10" onclick="totalcost();"/>
+                      <label for="yearly">$10<span><br/>yearly payments</span>
+                      <div class="align"><input type="radio" id="yearly" name="plan" value="10" onclick="totalcost();"/></div>
+                    </label>
                     </span>
                   </div>
               </div>
               <div class="promo">
+                <label for="promocode">Apply a Promo Code here (if valid):</label>
                  <input id="promocode" onChange="totalcost();" type="text" placeholder="Apply promo code here" name="promocode" list="promolist">
                    <datalist id="promolist">
                       <option value="NEWUSER" id="NEWUSER"></option>
                    </datalist>
               </div>
+              <br/>
               <div class="cost">
-                <p>Total cost:</p>
+                Your Initial Payment Amount:
+                <input type="number" id="totalcost" step="0.01" readonly/>
               </div>
-              <input type="number" id="totalcost" step="0.01" readonly/>
                  <br>
-               <input type="email" placeholder="Enter your email address"id="modal-email">
+              <div class="signup">
+                <strong>Interested? Sign Up with your email address here!<br/><br/></strong>
+                <input type="email" placeholder="Enter your email address"id="modal-email">
                 <input type="submit" value="Subscribe" id="modal-email-btn" onclick="subscribe();"/>
+              </div>
             </div>
           </div>
         </div>
@@ -78,7 +109,7 @@
                 <source src="images/mainvideo2.mp4" type="video/mp4">
               </video>
               <div class="textbox">
-                <h1>THE F1 TIMES</h1>
+                <span>THE F1 TIMES</span>
               </div>
           </div>
         </section>
@@ -86,95 +117,109 @@
           <div class="article">
             <img src="images/mainarticle1.jpg" onclick="imageClick('article1.html')"/>
              <div class="headertext">
-               <h1>Introduction to F1</h1>
-               <p>So you're new to F1 and want to find out all about the sport? Well fear not we have you covered.</p>
+               <div class="headerheader">Introduction to F1</div>
+               <div class="headerdescription">So you're new to F1 and want to find out all about the sport? Well fear not we have you covered.</div>
                <a href=article1.html>Read more here</a>
              </div>
           </div>
           <div class="article">
-             <img src="images/mainarticle2.jpg" onclick="imageClick('article2.html')"/>
-            <p>Max Verstappen is the world champion after last lap drama</p>
-          </div>
-       </section>
-       <section class="articles">
-          <div class="article">
-       <img src="images/mainarticle3.jpg" onclick="imageClick('article3.html')"/>
-           <p>2021 Season Review </p>
-          </div>
-          <div class="article">
-       <img src="images/mainarticle4.jpg" onclick="imageClick('article4.html')"/>
-            <p>Blast to the past</p>
-          </div>
-       </section>
-       <section class="articles">
-          <div class="article">
-       <img src="images/mainarticle5.jpg" onclick="imageClick('article5.html')"/>
-           <p>First look at the new 2022 season cars</p>
-          </div>
-       </section>
-       <h1 class="teamheader"><span>SEE YOUR FAVOURITE TEAM CAR REAVEALS NOW!</span></h1>
-       <section class="favteams">
-            <div class="articles">
-             <div class="f1teams">
-                 <img src="images/alfaromeologo.png"/>
-                  <div class="readmore">
-                    <div class="text"><a href="article5.html#alfaromeo">READ MORE</a></div>
-                  </div>
-              </div>
-              <div class="f1teams">
-                  <img src="images/alphataurilogo.jpg"/>
-                   <div class="readmore">
-                     <div class="text"><a href="article5.html#alphatauri">READ MORE</a></div>
-                   </div>
-               </div>
-              <div class="f1teams">
-                  <img src="images/alpinelogo.jpg"/>
-                   <div class="readmore">
-                     <div class="text"><a href="article5.html#alpine">READ MORE</a></div>
-                   </div>
-               </div>
-                <div class="f1teams">
-                 <img src="images/astonmartinlogo.jpg"/>
-                   <div class="readmore">
-                     <div class="text"><a href="article5.html#astonmartin">READ MORE</a></div>
-                   </div>
-                </div>
-                <div class="f1teams">
-                 <img src="images/ferrarilogo.jpg"/>
-                   <div class="readmore">
-                     <div class="text"><a href="article5.html#ferrari">READ MORE</a></div>
-                   </div>
-                </div>
+            <img src="images/mainarticle2.jpg" onclick="imageClick('article2.html')"/>
+            <div class="headertext">
+               <div class="headerheader">Introduction to F1</div>
+               <div class="headerdescription">So you're new to F1 and want to find out all about the sport? Well fear not we have you covered.</div>
+               <a href=article1.html>Read more here</a>
             </div>
-            <div class="articles">
+          </div>
+       </section>
+       <section class="articles">
+          <div class="article">
+            <img src="images/mainarticle3.jpg" onclick="imageClick('article3.html')"/>
+            <div class="headertext">
+               <div class="headerheader">Introduction to F1</div>
+               <div class="headerdescription">So you're new to F1 and want to find out all about the sport? Well fear not we have you covered.</div>
+               <a href=article1.html>Read more here</a>
+            </div>
+          </div>
+          <div class="article">
+            <img src="images/mainarticle4.jpg" onclick="imageClick('article4.html')"/>
+            <div class="headertext">
+               <div class="headerheader">Introduction to F1</div>
+               <div class="headerdescription">So you're new to F1 and want to find out all about the sport? Well fear not we have you covered.</div>
+               <a href=article1.html>Read more here</a>
+            </div>
+          </div>
+       </section>
+       <section class="articles">
+          <div class="article">
+            <img src="images/mainarticle5.jpg" onclick="imageClick('article5.html')"/>
+            <div class="headertext">
+               <div class="headerheader">Introduction to F1</div>
+               <div class="headerdescription">So you're new to F1 and want to find out all about the sport? Well fear not we have you covered.</div>
+               <a href=article1.html>Read more here</a>
+            </div>
+          </div>
+       </section>
+       <h1 class="teamheader" id="headerteam"><span>SEE YOUR FAVOURITE TEAM CAR REAVEALS NOW!</span></h1>
+       <section class="favteams">
+            <div class="teamorg">
              <div class="f1teams">
-                 <img src="images/haaslogo.jpg"/>
+                 <a href="article5.html#alfaromeo"><img src="images/alfaromeologo.png"/></a>
                   <div class="readmore">
-                    <div class="text"><a href="article5.html#haas">READ MORE</a></div>
+                    <div class="text"><a href=article5.html#alfaromeo>READ MORE</a></div>
                   </div>
               </div>
               <div class="f1teams">
-                  <img src="images/mclarenlogo.jpg"/>
+                  <a href="article5.html#alphatauri"><img src="images/alphataurilogo.jpg"/></a>
                    <div class="readmore">
-                     <div class="text"><a href="article5.html#mclaren">READ MORE</a></div>
+                     <div class="text"><a href=article5.html#alphatauri>READ MORE</a></div>
+                   </div>
+               </div>
+              <div class="f1teams">
+                  <a href="article5.html#alpine"><img src="images/alpinelogo.jpg"/></a>
+                   <div class="readmore">
+                     <div class="text"><a href=article5.html#alpine>READ MORE</a></div>
+                   </div>
+               </div>
+                <div class="f1teams">
+                 <a href="article5.html#astonmartin"><img src="images/astonmartinlogo.jpg"/></a>
+                   <div class="readmore">
+                     <div class="text"><a href=article5.html#astonmartin>READ MORE</a></div>
+                   </div>
+                </div>
+                <div class="f1teams">
+                 <a href="article5.html#ferrari"><img src="images/ferrarilogo.jpg"/></a>
+                   <div class="readmore">
+                     <div class="text"><a href=article5.html#ferrari>READ MORE</a></div>
+                   </div>
+                </div>
+             <div class="f1teams">
+                 <a href="article5.html#haas"><img src="images/haaslogo.jpg"/></a>
+                  <div class="readmore">
+                    <div class="text"><a href=article5.html#haas>READ MORE</a></div>
+                  </div>
+              </div>
+              <div class="f1teams">
+                  <a href="article5.html#mclaren"><img src="images/mclarenlogo.jpg"/></a>
+                   <div class="readmore">
+                     <div class="text"><a href=article5.html#mclaren>READ MORE</a></div>
                    </div>
                </div>
                <div class="f1teams">
-                   <img src="images/mercedeslogo.jpg"/>
+                   <a href="article5.html#mercedes"><img src="images/mercedeslogo.jpg"/></a>
                     <div class="readmore">
-                      <div class="text"><a href="article5.html#mercedes">READ MORE</a></div>
+                      <div class="text"><a href=article5.html#mercedes>READ MORE</a></div>
                     </div>
                 </div>
                 <div class="f1teams">
-                 <img src="images/redbulllogo.jpg"/>
+                 <a href="article5.html#redbull"><img src="images/redbulllogo.jpg"/></a>
                    <div class="readmore">
-                     <div class="text"><a href="article5.html#redbull">READ MORE</a></div>
+                     <div class="text"><a href=article5.html#redbull>READ MORE</a></div>
                    </div>
                 </div>
                 <div class="f1teams">
-                 <img src="images/williamslogo.jpg"/>
+                 <a href="article5.html#williams"><img src="images/williamslogo.jpg"/></a>
                    <div class="readmore">
-                     <div class="text"><a href="article5.html#williams">READ MORE</a></div>
+                     <div class="text"><a href=article5.html#williams>READ MORE</a></div>
                    </div>
                 </div>
             </div>

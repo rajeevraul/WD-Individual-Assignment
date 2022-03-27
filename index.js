@@ -1,12 +1,31 @@
+/*Navbar */
+function openNav() {
+              if (document.getElementById("mySidenav").style.width == "50%"){
+                document.getElementById("mySidenav").style.width = "0";
+              }
+              else {
+                document.getElementById("mySidenav").style.width = "50%";
+              }
+            }
+
+function toggle(x) {
+              x.classList.toggle("change");
+  }
+
   /*Modal*/
 // Get the modal
 var modal = document.getElementById("myModal");
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+var btn1 = document.getElementById("myBtn");
+var btn2 = document.getElementById("myBtnside");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 // When the user clicks on the button, open the modal
-btn.onclick = function() {
+btn1.onclick = function() {
+  console.log("working");
+  modal.style.display = "block";
+}
+btn2.onclick = function() {
   console.log("working");
   modal.style.display = "block";
 }

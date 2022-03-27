@@ -34,6 +34,9 @@
   color: #FFFF00;
 }
 
+.link:hover {
+  color: red;
+}
 .subheaders {
   margin: 10px 0 10px 0;
   color: #00FFFF;
@@ -131,4 +134,8 @@
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+#controversy {
+  text-align: justify;
 }
