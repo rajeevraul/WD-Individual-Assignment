@@ -2,6 +2,11 @@
    background-color: #212329;
 }
 
+.article5header {
+  text-align: center;
+  color: #FFFAFA;
+}
+
 .article5mainpic {
   display: flex;
   justify-content: center;
@@ -121,4 +126,139 @@
 #williams {
   padding-left: 10%;
   color: #4169E1;
+}
+
+/* Viewport for screen width size 1001 pixels to 1920 pixels */
+@media (max-width: 1920px) and (min-width: 1001px) {
+
+}
+
+/* Viewport for screen width size 768 pixels to 1000 pixels */
+@media (max-width: 1000px) and (min-width: 768px) {
+
+  .articlealign {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+  }
+
+  .article5pic {
+    order: 1;
+    padding: 10px;
+    width: 70%;
+  }
+
+  .a5text1 {
+    order: 2;
+    width: 80%;
+  }
+
+  .a5text2 {
+    width: 100%;
+  }
+
+  .teamheader {
+   margin-bottom: -15px !important;
+   letter-spacing: 2.5px;
+   font-size: 25px;
+   position: relative;
+  }
+
+  .bottomblock {
+    border-right: 2px solid #FF0000;
+    margin: 0;
+  }
+}
+
+/* Viewport for screen width size 576 pixels to 768 pixels */
+@media (max-width: 768px) and (min-width: 576px) {
+
+  .articlealign {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+  }
+
+  .article5pic {
+    order: 1;
+    padding: 10px;
+    width: 70%;
+  }
+
+  .a5text1 {
+    order: 2;
+    width: 80%;
+    font-size: 15px;
+  }
+
+  .a5text2 {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .teamheader {
+   margin-bottom: -15px !important;
+   letter-spacing: 2.5px;
+   font-size: 25px;
+   position: relative;
+  }
+
+  .bottomblock {
+    border-right: 2px solid #FF0000;
+    margin: 0;
+  }
+
+  .article5mainpic img {
+    border-radius: 20px;
+    width: 80%;
+    padding: 5px 10px 0 10px;
+  }
+}
+
+/* Viewport for screen width size 320 pixels to 576 pixels */
+@media (max-width: 576px) and (min-width: 320px) {
+
+  .article5mainpic img {
+    border-radius: 20px;
+    width: 90%;
+    padding: 5px 10px 0 10px;
+  }
+
+  .articlealign {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+  }
+
+  .article5pic {
+    order: 1;
+    padding: 10px;
+    width: 90%;
+  }
+
+  .a5text1 {
+    order: 2;
+    width: 80%;
+    font-size: 13px;
+  }
+
+  .a5text2 {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .teamheader {
+   margin-bottom: -15px !important;
+   letter-spacing: 2.5px;
+   font-size: 25px;
+   position: relative;
+  }
+
+  .bottomblock {
+    border-right: 2px solid #FF0000;
+    margin: 0;
+  }
 }
