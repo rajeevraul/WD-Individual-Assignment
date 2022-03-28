@@ -3,14 +3,14 @@
   box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Times New Roman", Times, serif;
+    /* font-family: "Times New Roman", Times, serif; */
     scroll-behavior: smooth;
   }
 
-/* @font-face {
-    font-family: Manrope;
+@font-face {
+    font-family: "Manrope";
     src: url(Fonts/Manrope-Regular.ttf);
-  } */
+  }
 
 /*Navigation bar container styling*/
 .navbar{
