@@ -60,7 +60,6 @@
 
 .a5text1 {
   width: 40%;
-  display: center;
   color: 	#FFFFFF;
   margin: 10px;
   line-height: 1.6;
@@ -69,7 +68,6 @@
 
 .a5text2 {
   width: 100%;
-  display: center;
   color: 	#FFFFFF;
   padding: 5px 10% 0 10%;
   line-height: 1.6;

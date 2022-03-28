@@ -24,7 +24,7 @@
   justify-content: center;
   width: 80%;
   border: 5px;
-  margin: 10px auto;
+  margin: auto;
 }
 
 .subheader {
@@ -34,7 +34,6 @@
 .maintext {
   width: 100%;
   text-align: justify;
-  display: center;
   color: 	#FFFFFF;
   padding: 10px 150px 20px 150px;
   line-height: 1.6;
@@ -42,9 +41,8 @@
 
 .text {
   width: 40%;
-  display: center;
   color: 	#FFFFFF;
-  margin: 10px;
+  margin: 10px 10px 0 10px;
   line-height: 1.6;
 }
 
@@ -76,7 +74,7 @@
 
   .article4pics {
     order: 1;
-    padding: 10px;
+    padding: 0;
   }
 
   .text {
@@ -133,7 +131,6 @@
   .maintext {
     width: 100%;
     text-align: justify;
-    display: center;
     color: 	#FFFFFF;
     padding: 10px 50px 20px 50px;
     line-height: 1.6;
