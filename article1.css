@@ -39,6 +39,7 @@
   border: 2px;
 }
 
+/* Article picture styling */
 .article1pic1{
  width: 40%;
 }
@@ -50,6 +51,7 @@
   top: 25vh;
 }
 
+/* Article picture caption */
 .caption {
   color: #FFFF00;
   font-size: 20px;
@@ -61,6 +63,7 @@
   top: 65vh;
 }
 
+/* Container holding text styling */
 .a1text2 {
   width: 80%;
   color: #FFFFFF;
@@ -70,6 +73,7 @@
   line-height: 1.6;
 }
 
+/* Container styling */
 .articlealignright {
   display: flex;
   justify-content: center;
@@ -78,6 +82,7 @@
   margin: auto;
 }
 
+/* Container holding text styling */
 .a1text3 {
   width: 40%;
   color: 	#FFFFFF;
@@ -85,6 +90,7 @@
   line-height: 1.6;
 }
 
+/* Image styling */
 .article1pic2{
  width: 40%;
 }
@@ -96,12 +102,14 @@
   top: 25vh;
 }
 
+/* Hyperlink styling */
 .link {
   font-weight: bold;
   text-decoration: none;
   color: #FFFF00;
 }
 
+/* Countdown timer styling */
 .countdown {
   text-align: center;
   font-size: 40px;

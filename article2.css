@@ -1,13 +1,16 @@
+/* Standardised background colour throughout the page */
 .mainbody {
  background-color: #212329;
 }
 
+/* Page header styling */
 .article2header {
   text-align: center;
   color: #FFFAFA;
   padding: 10px;
 }
 
+/* Main article image styling */
 .article2mainpic {
   display: flex;
   justify-content: center;
@@ -20,6 +23,7 @@
   padding: 5px 10px 0 10px;
 }
 
+/* Container holding text styling */
 .a2text {
   width: 80%;
   color: 	#FFFFFF;
@@ -39,12 +43,14 @@
   width: 25%;
 }
 
+/* GIF styling */
 .gif {
   display: flex;
   justify-content: center;
   padding: 10px;
 }
 
+/* Embedded video stylingS */
 .embeddedvideo {
   display: flex;
   justify-content: center;
