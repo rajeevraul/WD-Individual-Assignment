@@ -14,7 +14,8 @@ function toggle(x) {
               x.classList.toggle("change");
   }
 
-//Modal source from w3 schools. source: https://www.w3schools.com/howto/howto_css_modals.asp
+//Modal in navigation bar on all pages
+//[1] W3 Schools, 'How TO - CSS/JS Modal' ().[Example].https://www.w3schools.com/howto/howto_css_modals.asp
 // Get the modal upon clicking on subscribe
 var modal = document.getElementById("myModal");
 // Get the button that opens the modal
@@ -84,7 +85,7 @@ function newsletter() {
 }
 
 //Countdown Timer in Article 1
-// from w3 schools. Source: https://www.w3schools.com/howto/howto_js_countdown.asp
+//[2] W3 Schools, 'How TO - JavaScript Countdown Timer' ().[Example].https://www.w3schools.com/howto/howto_js_countdown.asp
 // Set the date we're counting down to
 var countDownDate = new Date("Apr 10, 2022 13:00:00").getTime();
 
