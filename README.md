@@ -1,14 +1,13 @@
 # Web Development 
 A front end website project
 
-Introduction:
+# Introduction:
 The essential story being told by my site is that new and and current Formula 1 fans can visit the site and gather new information
 about their favourite teams as well as learning the rich history about the sport.
 I choose to implement a flat site structure in my website. This is mainly due to accessibility reasons as well as this structure
 being popular amongst news websites today.
 
-3 things that have inspired me when creating my website:
-
+# 3 things that have inspired me when creating my website:
 My love and enthusiasm for the sport inspired me to make a website.  My interest has peaked as well as I was thoroughly reading up articles
 that would be suitable for my website.
 I have also gained inspiration from the official Formula 1 website. Their aesthetic is neat and simplistic but at the same
@@ -16,15 +15,14 @@ time, the design was smooth making it easy to navigate around.
 Lastly, I wanted to share my love for the sport through my website so that others can be enticed to join the fanbase. I also wanted to
 showcase the grit of the sport so that others can be inspired to show the path to becoming a fan like me.
 
-#3 ways in which my site is accessible:
-
+# 3 ways in which my site is accessible:
 My website has a simple and sleek design that accommodates people without any technical know-how so that they can easily access the website.
 I have also added hyperlinks to some parts of my article that redirect to external articles to facilitate learning to compensate
 the lack of specific information in my own website.
 Lastly, I have implemented a drop down box  that can be easily accessed, when the mouse hovers over the new button, so that the user can
 navigate to any page from any page.
 
-3 ways in which I have considered usability in my site:
+# 3 ways in which I have considered usability in my site:
 
 I considered the readability aspect to cater to the usability of the site. The use of a dark grey colour scheme takes into account people
 with colour deficiency. A dark background with light text makes it easier for people with colour blindness to read the content. With the use of
@@ -33,8 +31,7 @@ source: www.colorhexa.com/212329, to cater people with visual impairment.
 I also used navigation with the anchor text at the top of the page. The header remains the same throughout the site.
 This makes it easier for the user to navigate around the site with the least amount of clicks or taps as possible.
 
-3 things I had to learn/find out by yourself when creating your site, and describe how you did that:
-
+# 3 things I had to learn/find out by yourself when creating your site, and describe how you did that:
 One thing I had to learn or rather pay attention to, is the layout of news or blog websites. Most of these websites generally
 have a similar layout of text and images. The positioning of media such as pictures and videos was something I had to pay
 particular attention to as well. This was possible by researching and collating information on the internet.
@@ -44,26 +41,24 @@ common screen sizes and implementing as wide a range I could to accommodate the 
 Lastly, I had to learn about adapting existing code and personalising it into my website. An example of this would be the modal which I
 implemented on my subscribe button. With some trial and error and reading up on the formatting, I was able to implement it.
 
-What aspect(s) of your work I think worked well and why?
-
+# What aspect(s) of your work I think worked well and why?
 I feel that the aesthetics of my site works very well with the overall theme. My site is also easy to access and navigation is
 smooth as there are multiple ways of doing so and knowing which article you are on by prioritisin URLs in the navigation bar.
 I also think the responsivity of my website worked well as I implemented a large range of pixel sizes so that it would be user friendly, no matter
 the device being used.
 
-What aspect(s) of my work could be improved, and how might I do things differently another time?
-
+# What aspect(s) of my work could be improved, and how might I do things differently another time?
 One aspect I would like to improve on is my organisation of code and the elimination of redundancies. I felt like
 there were ways to shorten my code and prevent writing the same syntax's, in my case some of the CSS styling of texts and images,
 but I was not able to sort them out in a time efficient manner.
 Another aspect of my work that could have been improved is implementing more JavaScript events. This would have made the site feel more responsive
 as well as being user centric.
 
-What resources were used when creating my work?
-
+# What resources were used when creating my work?
 I relied on the W3 Schools website for their resources on how to debug my code as well as finding new ways to style my content and its
 responsivity. I also relied on Stack Overflow to figure out specific problems that were hindering my progress.
 
+# References
 Appendices: Site Map, Wireframes and Mock-ups (Located in the Appendices folder)
 
 Sources(Code):
