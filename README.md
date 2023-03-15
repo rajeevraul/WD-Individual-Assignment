@@ -8,6 +8,7 @@ I choose to implement a flat site structure in my website. This is mainly due to
 being popular amongst news websites today.
 
 3 things that have inspired me when creating my website:
+
 My love and enthusiasm for the sport inspired me to make a website.  My interest has peaked as well as I was thoroughly reading up articles
 that would be suitable for my website.
 I have also gained inspiration from the official Formula 1 website. Their aesthetic is neat and simplistic but at the same
